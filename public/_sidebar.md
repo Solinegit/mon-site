@@ -1,4 +1,4 @@
 <!-- docs/_sidebar.md -->
 
-* [Webdev101 Home](/)
+* [Home](/)
 * [01 hello world typescript](01_hello_world_typescript/)
