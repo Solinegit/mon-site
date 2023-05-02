@@ -1,9 +1,11 @@
 image: alpine:latest
 
 pages:
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+  - echo 'Deploying to gitlab pages'
   artifacts:
     paths:
     - public
