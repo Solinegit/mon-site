@@ -1,4 +1,5 @@
 # Web Dev 101 Telecom Paris
 
-A first year Telecom Paris course on web development with Dart and Flutter.
+Cours introductif au développement web en première année à Telecom Paris par Rémi SHARROCK.
+
 
