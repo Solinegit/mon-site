@@ -1,0 +1,3 @@
+[submodule "public/01_hello_world_typescript"]
+	path = public/01_hello_world_typescript
+	url = https://gitlab.com/webdev101/01_hello_world_typescript.git
