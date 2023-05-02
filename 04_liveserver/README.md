@@ -2,9 +2,9 @@ installer l'extension liveserver de vscode
 
 lancer liveserver (en bas à droite de vscode cliquer sur go live)
 
-pour lancer la config de debug que vous pouvez lire dans  .vscode/launch.json  :
+pour lancer la config de debug (que vous pouvez lire dans  .vscode/launch.json) :
 
-cliquer ensuite sur executer>démarrer le déboggage
+cliquer sur executer>démarrer le déboggage
 
 
 
