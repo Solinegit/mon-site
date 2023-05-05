@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "out",
+    "sourceMap": true
+  },
+    "files": [
+      "src/deezer.ts",
+      "src/deezerOffline.ts",
+      "src/app.ts"
+    ]
+}
