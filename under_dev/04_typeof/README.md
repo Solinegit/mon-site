@@ -19,13 +19,16 @@ vous devez ensuite lire et comprendre le code source de `src/app.ts` que voici
 compilez dans un terminal avec
 
 ```terminal
-tsc
+tsc -w
 ```
 
 ## exécuter
 
-vous devez ouvrir `index.html` dans VSCode et aller dans exécuter > démarrer le débogage (ou appuyer sur F5) et choisir chrome (installez le navigateur Google Chrome si nécessaire). Chrome s'ouvre et vous contrôler l'exécution depuis VSCode.
+vous devez ouvrir `index.html` dans VSCode et aller dans exécuter > démarrer le débogage (ou appuyer sur F5) et choisir chrome (installez le navigateur Google Chrome si nécessaire).
 
-vous devez ensuite ouvrir la console du navigateur pour voir la sortie
+vous devez ensuite ouvrir la console du navigateur pour voir la sortie.
 
 ![console](console.png)
+
+vous pouvez aussi voir la debug console dans VSCode qui reproduit la sortie de la console du navigateur.
+

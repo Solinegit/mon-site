@@ -1,6 +1,6 @@
 //voir https://www.json.org/json-fr.html
 
-//JSON vers des objets (eux-même décrits par une interface)
+//dé-sérialisation de JSON vers des objets (eux-même décrits par une interface)
 
 let data=`[
     {
@@ -28,7 +28,7 @@ let data=`[
   
   console.log(users[0].scores[0])
 
-  //objets (instanciés depuis une classe qui implémente une interface) vers JSON
+  //sérialisation d'objets (instanciés depuis une classe qui implémente une interface) vers JSON
   
   class User implements UserInterface{
       id: string
