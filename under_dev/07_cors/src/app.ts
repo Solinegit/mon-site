@@ -14,9 +14,9 @@ interface GenreAPI {
 }
 
 
-async function getGenresFromDeezer() {
+async function getGenresFromDeezer(){
    
-    const response = await fetch('https://api.deezer.com/genre/');
+    const response = await fetch('http://localhost:8088/https://api.deezer.com/genre/');
     const genrejson : GenreAPI = await response.json();
     return genrejson.data;
 

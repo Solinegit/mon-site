@@ -58,7 +58,7 @@ function ma_chaine(tab: number[]):number{
 let tabSumPairFois2Bis = ma_chaine(tab)
 console.log("ma_chaine(tab): "+tabSumPairFois2Bis)
 
-function ma_chaine2(tab: number[],f_filter: (x: number) => boolean,f_map1: (x: number) => number,f_map2: (x: number) => number,f_reduce: (a: number, b: number) => number){
+function ma_chaine2(tab: number[],f_filter: (x: number) => boolean,f_map1: (x: number) => number,f_map2: (x: number) => number,f_reduce: (a: number, b: number) => number):number{
     return tab.filter(f_filter).map(f_map1).map(f_map2).reduce(f_reduce)
 }
 let tabSumPairFois2Ter = ma_chaine2(tab,estPair,fois2,fois3,somme)
