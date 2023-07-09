@@ -19,10 +19,13 @@ interface GenreAPI {
     data: GenreInterface[]
 }
 
-
+//dé-sérialisation de JSON vers un tableau d'objets
 let genresRaw : GenreAPI = JSON.parse(response)
+
+//récupération du tableau d'objets
 let genres : GenreInterface[] = genresRaw.data
 
+//affichage des noms des genres
 for(let i=0;i<genres.length;i++){
     console.log(genres[i].name)
 }

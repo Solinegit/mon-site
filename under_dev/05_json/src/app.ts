@@ -23,6 +23,8 @@ let data=`[
     age: number
     scores: number[]
   }
+
+  //dé-sérialisation de JSON vers un tableau d'objets
   
   let users : UserInterface[] = JSON.parse(data)
   
@@ -42,6 +44,8 @@ let data=`[
           this.scores=scores
       }
   }
+
+  //création d'objets (instanciés depuis la classe User qui implémente l'interface UserInterface)
   
   let u1,u2 : UserInterface
   u1 = new User("456","Eya",23,[2.4,34])
@@ -50,8 +54,12 @@ let data=`[
   //sans utiliser de classe cela donne
 
   let u3 : UserInterface = {"id": "1042","name": "Joe","age": 27,"scores": [31.4, 29.9, 35.7]}
+
+  //création d'un tableau de 3 objets (instanciés depuis la classe User qui implémente l'interface UserInterface)
   
   let users2 : UserInterface[]= [u1,u2,u3]
+
+  //sérialisation du tableau users2 vers JSON
   
   let data2 :string = JSON.stringify(users2)
   
