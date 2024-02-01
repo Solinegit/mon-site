@@ -9,4 +9,4 @@
 	url = https://gitlab.com/webdev101/03_tsconfig.json.git
 [submodule "public/04_debug"]
 	path = public/04_debug
-	url = git@gitlab.com:webdev101/04_debug.git
+	url = https://gitlab.com/webdev101/04_debug.git
