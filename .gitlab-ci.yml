@@ -1,2 +1,13 @@
-# The Docker image that will be used to build your app
-image: node:lts
+image: alpine:latest
+
+pages:
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  stage: deploy
+  script:
+  - echo 'Deploying to gitlab pages'
+  artifacts:
+    paths:
+    - public
+  only:
+  - main
