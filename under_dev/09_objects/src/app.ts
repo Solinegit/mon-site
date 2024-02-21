@@ -93,3 +93,4 @@ const persons: Person[] = [
 console.log("Filter Users only")
 const usersOnly = persons.filter((person: Person) => person instanceof User);
 usersOnly.forEach((person: Person) => person.logPerson());
+

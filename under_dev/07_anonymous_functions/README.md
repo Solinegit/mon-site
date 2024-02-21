@@ -1,6 +1,8 @@
 # Fonctions anonymes, fonctions fléchées, lambdas
 
-voici un exercice pour pratiquer l'utilisation des fonctions fléchées en TypeScript :
+vous devez lire et comprendre le code source de `app.ts` que voici
+
+[app.ts](app.ts ':include :type=code typescript')
 
 # Exercice : Calculatrice simple
 
