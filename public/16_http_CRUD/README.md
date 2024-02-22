@@ -30,7 +30,7 @@ Vous devez lire et comprendre le code source de `app.ts` que voici
 
 [src/app.ts](src/app.ts ":include :type=code typescript")
 
-Si vous exécutez une deuxième fois le code après ces modifications
+Si vous exécutez une deuxième fois le code, les modifications ayant déjà été effectuées,
 vous aurez deux problèmes:
 
 1. pour la suppression:
