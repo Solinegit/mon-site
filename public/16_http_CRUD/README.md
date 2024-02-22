@@ -34,8 +34,7 @@ Si vous exécutez une deuxième fois le code après ces modifications
 vous aurez deux problèmes:
 
 1. pour la suppression:
-There was a problem with the fetch operation:  Error: HTTP error! status: 404
-erreur 404 car le restaurant a déjà été supprimé et n'existe plus = introuvable
+`There was a problem with the fetch operation:  Error: HTTP error! status: 404` : erreur 404 car le restaurant a déjà été supprimé et n'existe plus = introuvable = 404
 
 2. pour la création:
 vous aurez en doublon le restaurant "Le Restaurant de la Joie"
@@ -48,7 +47,7 @@ Pas de problème pour la lecture ou la modification (car onles modifie avec les 
 remarquez que les requêtes sont asynchrones
 et que l'ordre d'exécution n'est pas garanti
 
-remarquez aussi que restaurantCategories n'est pas géré
+remarquez aussi que `restaurantCategories` (qui est une table de relation entre `restaurants` et `categories`) n'est pas du tout géré par ce programme
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
@@ -56,6 +55,6 @@ Pour rappel, vous pouvez accéder au code source de toutes les parties (à parti
 
 Modifiez le fichier `app.ts` pour bien gérer les modifications des relations entre les restaurants et les catégories:
 
-- à chaque suppression/modification d'une catégorie, modifiez les categoryIds de tous les restaurants qui la contiennent
-- à chaque suppression/modification d'un restaurant, modifiez les restaurantIds de toutes les catégories qui le contiennent
-- à chaque suppression/modification modifiez les relations dans restaurantCategories
+- à chaque suppression/modification d'une catégorie, modifiez les `categoryIds` de tous les restaurants qui la contiennent
+- à chaque suppression/modification d'un restaurant, modifiez les `restaurantIds` de toutes les catégories qui le contiennent
+- à chaque suppression/modification modifiez les relations dans `restaurantCategories`
