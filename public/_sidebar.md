@@ -15,4 +15,5 @@
 * [12 exceptions](12_exceptions/)
 * [13 async await](13_async_await/)
 * [14 fetch](14_fetch/)
-* [16 cors](16_cors/)
+* [15 cors](15_cors/)
+* [16 http](16_http/)
