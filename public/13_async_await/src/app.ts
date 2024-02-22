@@ -33,8 +33,12 @@ class DataService {
   }
 
   async retrieveData() {
-    const data = await this.fetchData();
-    console.log(data);
+    try {
+      const data = await this.fetchData();
+      console.log(data);
+    } catch (error) {
+      console.error('Une erreur est survenue lors de la récupération des données', error);
+    }
   }
 }
 

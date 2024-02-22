@@ -10,6 +10,53 @@ Une promesse en JavaScript (et donc en TypeScript) est un objet qui représente 
 
 Dans le code ci-dessous, la fonction `fetchData` est une fonction asynchrone qui utilise la fonction `delay` préalablement définie au dessus. La fonction `delay` est une fonction qui prend un nombre de millisecondes comme argument et retourne une promesse qui se résout après ce nombre de millisecondes. Ceci permet de simuler une opération asynchrone (comme une requête réseau). Lorsque vous appelez `await delay(2000);` dans `fetchData`, l'exécution de `fetchData` est mise en pause pendant 2 secondes, après quoi elle reprend et retourne "Some data". Remarquez que `delay` utilise `setTimeout` (une fonction JavaScript déjà existante qui permet d'exécuter du code après un certain délai, exprimé en millisecondes) pour créer une promesse qui se résout après un certain délai. Cela est nécessaire car `setTimeout` ne retourne pas une promesse, mais `delay` retourne une promesse qui se résout après le délai spécifié. 
 
+`resolve` et `reject` sont deux fonctions fournies par le constructeur de la Promesse en JavaScript. Elles sont utilisées pour indiquer le résultat d'une opération asynchrone.
+
+`resolve` est une fonction qui, lorsqu'elle est appelée, fait passer la promesse de l'état "en attente" à l'état "résolue", et fixe la valeur de la promesse à la valeur passée à `resolve`.
+
+`reject` est une fonction qui, lorsqu'elle est appelée, fait passer la promesse de l'état "en attente" à l'état "rejetée", et fixe la raison du rejet de la promesse à la valeur passée à `reject`.
+
+Voici un exemple de leur utilisation :
+    
+```typescript
+new Promise((resolve, reject) => {
+    // Simuler une opération asynchrone
+    setTimeout(() => {
+        const error = false; // Supposons que nous vérifions une condition ici
+
+        if (error) {
+            reject("Une erreur s'est produite");
+        } else {
+            resolve("Opération réussie");
+        }
+    }, 2000);
+})
+.then(result => console.log(result)) // Affiche "Opération réussie" si la promesse est résolue
+.catch(error => console.error(error)); // Affiche "Une erreur s'est produite" si la promesse est rejetée
+```
+
+Dans cet exemple, nous créons une nouvelle promesse qui simule une opération asynchrone avec `setTimeout`. Le premier paramètre de `setTimeout` est une fonction fléchée qui est exécutée après 2 secondes. Cette fonction fléchée contient une simulation de condition qui peut être vraie ou fausse. Par exemple ici, si `error` est `false`, nous appelons `resolve` avec la chaîne "Opération réussie", ce qui résout la promesse. Si `error` était `true`, nous pourrions appeler `reject` avec la chaîne "Une erreur s'est produite", ce qui rejetterait la promesse. Ensuite, nous utilisons `then` pour gérer le cas où la promesse est résolue, et `catch` pour gérer le cas où la promesse est rejetée.
+
+Enfin, dans l'exemple ci-dessous, dans la classe `DataService`, nous utilisons un `async/await` pour gérer les opérations asynchrones. La méthode `retrieveData` est une méthode asynchrone qui attend que la méthode `fetchData` soit résolue avant de continuer. C'est pourquoi il n'y a pas besoin d'utiliser `.then()` pour gérer la résolution de la promesse.
+
+Remarquez que l'exécution du code continue après `dataService.retrieveData();`. Cette méthode retourne une promesse qui est résolue de manière asynchrone, ce qui signifie que le reste du code peut continuer à s'exécuter pendant que `retrieveData` attend que `fetchData` soit résolu.
+
+Si vous voulez attendre que `retrieveData` soit terminé avant de continuer, vous pouvez utiliser `await` :
+
+```typescript
+await dataService.retrieveData();
+```
+
+Cependant, notez que await ne peut être utilisé que dans une fonction asynchrone. Si vous n'êtes pas dans une fonction asynchrone, vous pouvez utiliser `then` pour attendre que la promesse soit résolue :
+
+```typescript
+dataService.retrieveData().then(() => {
+    // Le code ici ne sera exécuté qu'après que retrieveData soit terminé
+});
+```
+
+Ces deux approches vous permettent de contrôler quand et comment votre code réagit à la résolution de promesses asynchrones.
+
 vous devez lire et comprendre le code source de `app.ts` que voici
 
 [src/app.ts](src/app.ts ":include :type=code typescript")
