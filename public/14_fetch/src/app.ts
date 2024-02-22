@@ -25,28 +25,32 @@ class EarthquakeService {
   // - the place of the earthquake
   // and display it on the page as well as in the console
   async displayEarthquakes() {
-    // Await the promise to resolve
-    const earthquakes = await this.getEarthquakesFromUSGS();
-    const ul: HTMLUListElement = document.createElement("ul");
-    earthquakes.forEach((earthquake) => {
-      // Use forEach on the resolved earthquakes array
-      const li: HTMLLIElement = document.createElement("li");
-      const date: Date = new Date(earthquake.properties.time);
-      const options: Intl.DateTimeFormatOptions = {
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit",
-        timeZone: "Europe/Paris",
-      };
-      const dateString: string = date.toLocaleDateString("fr-FR", options);
-      const finalString: string = `${dateString} - ${earthquake.properties.mag} - ${earthquake.properties.place}`;
-      li.textContent = finalString;
-      ul.appendChild(li);
-      console.log(finalString);
-    });
-    document.body.appendChild(ul);
+    try {
+      // Await the promise to resolve
+      const earthquakes = await this.getEarthquakesFromUSGS();
+      const ul: HTMLUListElement = document.createElement("ul");
+      earthquakes.forEach((earthquake) => {
+        // Use forEach on the resolved earthquakes array
+        const li: HTMLLIElement = document.createElement("li");
+        const date: Date = new Date(earthquake.properties.time);
+        const options: Intl.DateTimeFormatOptions = {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          timeZone: "Europe/Paris",
+        };
+        const dateString: string = date.toLocaleDateString("fr-FR", options);
+        const finalString: string = `${dateString} - ${earthquake.properties.mag} - ${earthquake.properties.place}`;
+        li.textContent = finalString;
+        ul.appendChild(li);
+        console.log(finalString);
+      });
+      document.body.appendChild(ul);
+    } catch (error) {
+      console.error('Une erreur est survenue lors de la récupération des données de tremblement de terre :', error);
+    }
   }
 }
 

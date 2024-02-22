@@ -2,7 +2,14 @@
 
 :memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/14_fetch/README.md)
 
-!> **Attention** page en cours de création, vous voyez une version incomplète de la page.
+La méthode `fetch` est souvent utilisée avec `async/await` car elle renvoie une promesse. L'utilisation de `async/await` permet de gérer ces promesses de manière plus lisible et plus facile à comprendre. Au lieu d'utiliser des callbacks ou des chaînes de `.then()`, vous pouvez écrire du code qui ressemble beaucoup à du code synchrone, mais qui fonctionne toujours de manière asynchrone.
+
+Dans le code ci-dessous, `fetch` est utilisé pour faire une requête HTTP à une API. Cette opération est asynchrone car elle peut prendre un certain temps pour obtenir une réponse. En utilisant `await`, le code attend que la promesse renvoyée par `fetch` soit résolue (ou rejetée, dans ce cas le bloc `catch` est exécuté) avant de continuer.
+
+Détails d'implémentation :
+- `createElement` : Cette méthode du Document Object Model (DOM) est utilisée pour créer un nouvel élément HTML. Par exemple, `document.createElement("ul")` crée un nouvel élément `<ul>` (une liste non ordonnée).
+- `appendChild` : Cette méthode du DOM est utilisée pour ajouter un nœud à la fin de la liste des enfants d'un nœud parent spécifié. Par exemple, `ul.appendChild(li)` ajoute l'élément `<li>` à la fin de l'élément `<ul>`.
+- `toLocaleDateString` : Cette méthode de l'objet Date convertit une date en une chaîne de caractères, en utilisant les conventions de formatage de date locales. Vous pouvez spécifier un paramètre de localisation (par exemple, "fr-FR" pour le français) et un objet d'options pour personnaliser le format de la date. Dans le code, `toLocaleDateString` est utilisé pour formater la date de chaque tremblement de terre en utilisant le format de date français, avec des options spécifiques pour l'année, le mois, le jour, l'heure, la minute et le fuseau horaire.
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 
