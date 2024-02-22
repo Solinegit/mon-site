@@ -2,6 +2,8 @@
 
 :memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/14_fetch/README.md)
 
+!> **Attention** page en cours de création, vous voyez une version incomplète de la page.
+
 vous devez lire et comprendre le code source de `app.ts` que voici
 
 [src/app.ts](src/app.ts ":include :type=code typescript")
