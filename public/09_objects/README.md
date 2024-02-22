@@ -20,6 +20,7 @@ Quelques détails d'implémentation :
 - le mot-clé `abstract` est utilisé pour indiquer qu'une classe est abstraite (ne peut pas être instanciée directement) ou qu'une méthode est abstraite (doit être redéfinie dans les classes filles avec son implémentation).
 - la méthode `super()` est utilisée pour appeler le constructeur de la classe mère (ou parente) depuis le constructeur de la classe fille. Cette instruction doit toujours être la première instruction dans le constructeur de la classe fille. Elle est utilisée pour initialiser les propriétés héritées de la classe mère et peut donc prendre des paramètres.
 - le mot-clé `this` est utilisé pour faire référence à l'objet courant (l'instance de la classe sur laquelle la méthode est appelée). Il est utilisé pour accéder aux propriétés et aux méthodes de l'objet courant (de l'instance courante).
+- le mot-clé `instanceof` est utilisé pour vérifier si un objet est une instance d'une classe ou d'une classe fille. Il renvoie `true` si l'objet est une instance de la classe spécifiée, sinon il renvoie `false`.
 
 Vous devez lire et comprendre le code source de `app.ts` que voici
 
