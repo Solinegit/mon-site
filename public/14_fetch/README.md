@@ -10,13 +10,12 @@ Pour rappel, vous pouvez accéder au code source de toutes les parties (à parti
 
 # Exercice Création d'un service de recherche d'adresses en France
 
-Objectif : Créer une application simple qui utilise l'API de recherche d'adresses en France
+?> _Objectif_ Créer une application simple qui utilise l'API de recherche d'adresses en France
 
-documentation de l'API : https://adresse.data.gouv.fr/api-doc/adresse
-
+?> _documentation_ de l'API : https://adresse.data.gouv.fr/api-doc/adresse
 exemple de requête : https://api-adresse.data.gouv.fr/search/?q=8+bd+du+port&limit=5
 
-D'après la documentation, le retour est est un geojson FeatureCollection respectant la spec GeoCodeJSON
+D'après la documentation, le retour est un geojson FeatureCollection respectant la spec GeoCodeJSON
 
 1. Créez une interface `Address` pour représenter un résultat de recherche d'adresse, nous sommes intéressés par le nom de la ville, le code postal, le nom de la rue, le numéro, le contexte (numéro du département, nom du département et de la région) ainsi que la latitude et la longitude. Cette interface doit donc contenir les propriétés suivantes : `city`, `postcode`, `street`, `housenumber`, `context`, `lat` et `lon`. Attention car ces propriétés ne sont pas directement accessibles à la racine de l'objet retourné par l'API, vous devrez les extraire du champ `properties` de chaque objet `Feature` du tableau `features` retourné par l'API.
 2. Créez une nouvelle classe `AddressService` avec une méthode `searchAddress` qui doit accepter deux paramètres : `query` (une chaîne de caractères représentant l'adresse à rechercher) et `limit` (un nombre entier représentant le nombre maximum de résultats à retourner). La méthode `searchAddress` doit retourner une promesse (`Promise`) qui se résout avec les résultats de la recherche d'adresses.
