@@ -48,7 +48,7 @@ class User implements UserInterface {
 //création d'objets (instanciés depuis la classe User
 //qui implémente l'interface UserInterface)
 
-let u1, u2: UserInterface;
+let u1: UserInterface, u2: UserInterface;
 u1 = new User("456", "Eya", 23, [2.4, 34]);
 u2 = new User("789", "Emma", 32, [23.1, 9, 5]);
 
