@@ -12,8 +12,9 @@ Pour rappel, vous pouvez accéder au code source de toutes les parties (à parti
 
 ?> _Objectif_ Créer une application simple qui utilise l'API de recherche d'adresses en France
 
-?> _documentation_ de l'API : https://adresse.data.gouv.fr/api-doc/adresse
-exemple de requête : https://api-adresse.data.gouv.fr/search/?q=8+bd+du+port&limit=5
+?> _Documentation de l'API_ https://adresse.data.gouv.fr/api-doc/adresse
+
+?> _exemple de requête_ https://api-adresse.data.gouv.fr/search/?q=8+bd+du+port&limit=5
 
 D'après la documentation, le retour est un geojson FeatureCollection respectant la spec GeoCodeJSON
 
