@@ -1,6 +1,6 @@
 # Fonctions sur les tableaux: map, reduce, filter, find et différence avec forEach
 
-https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/08_map_reduce_filter_find_foreach/README.md)
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/08_map_reduce_filter_find_foreach/README.md)
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 

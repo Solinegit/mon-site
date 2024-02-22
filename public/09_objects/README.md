@@ -1,6 +1,6 @@
 # Les objets en TypeScript: héritage, polymorphisme, interfaces, classes abstraites
 
-https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/09_objects/README.md)
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/09_objects/README.md)
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 
