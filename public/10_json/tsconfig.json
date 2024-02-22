@@ -4,8 +4,5 @@
     "outDir": "out",
     "sourceMap": true
   },
-    "files": [
-      "src/deezerOffline.ts",
-      "src/app.ts"
-    ]
+  "files": ["src/deezerOffline.ts", "src/app.ts"]
 }

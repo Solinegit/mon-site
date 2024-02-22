@@ -4,7 +4,7 @@
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 
-[src/app.ts](src/app.ts ':include :type=code typescript')
+[src/app.ts](src/app.ts ":include :type=code typescript")
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partie de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
@@ -20,10 +20,10 @@ Créez une fonction fléchée **diviser** qui prend deux nombres en paramètres 
 
 Créez une fonction fléchée calculatrice qui prend trois paramètres : deux nombres et une opération sous forme de chaîne de caractères ("additionner", "soustraire", "multiplier", "diviser"). Cette fonction doit utiliser une instruction pour déterminer quelle opération effectuer, puis appeler la fonction appropriée et afficher le résultat.
 
-Par exemple, 
+Par exemple,
 
 ```typescript
-calculatrice(5, 3, "additionner")
+calculatrice(5, 3, "additionner");
 ```
 
 doit afficher "La somme est: 8".

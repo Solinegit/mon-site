@@ -4,7 +4,7 @@
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 
-[src/app.ts](src/app.ts ':include :type=code typescript')
+[src/app.ts](src/app.ts ":include :type=code typescript")
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partie de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
@@ -21,4 +21,3 @@ Pour rappel, vous pouvez accéder au code source de toutes les parties (à parti
 # Exercice 3
 
 Reprenez les exercices 2 et 3 mais cette fois-ci utilisez des classes (`Calculator` pour l'exercice 1 et `User` pour l'exercice 2). La fonction `calculateSumAsync` doit être une méthode de la classe `Calculator` et la fonction `verifyUser` doit être une méthode de la classe `User`.
-

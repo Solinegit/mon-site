@@ -1,4 +1,3 @@
-
 # 04_typeof
 
 :memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/04_typeof/edit/main/-/README.md)
@@ -11,8 +10,7 @@ dans VSCode, clonez le dépôt <https://gitlab.com/webdev101/04_typeof.git>
 
 vous devez ensuite lire et comprendre le code source de `src/app.ts` que voici
 
-[src/app.ts](src/app.ts ':include :type=code typescript')
-
+[src/app.ts](src/app.ts ":include :type=code typescript")
 
 ## compiler
 
@@ -31,4 +29,3 @@ vous devez ensuite ouvrir la console du navigateur pour voir la sortie.
 ![console](console.png)
 
 vous pouvez aussi voir la debug console dans VSCode qui reproduit la sortie de la console du navigateur.
-

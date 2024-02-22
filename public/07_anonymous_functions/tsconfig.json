@@ -4,7 +4,5 @@
     "outDir": "out",
     "sourceMap": true
   },
-    "files": [
-      "src/app.ts"
-    ]
+  "files": ["src/app.ts"]
 }
