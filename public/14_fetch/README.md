@@ -4,6 +4,8 @@ vous devez lire et comprendre le code source de `app.ts` que voici
 
 [src/app.ts](src/app.ts ':include :type=code typescript')
 
+Pour rappel, vous pouvez accéder au code source de toutes les parties (à partie de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
+
 # Exercice Création d'un service de recherche d'adresses en France
 
 Objectif : Créer une application simple qui utilise l'API de recherche d'adresses en France

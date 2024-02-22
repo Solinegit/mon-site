@@ -4,6 +4,8 @@ vous devez lire et comprendre le code source de `app.ts` que voici
 
 [src/app.ts](src/app.ts ':include :type=code typescript')
 
+Pour rappel, vous pouvez accéder au code source de toutes les parties (à partie de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
+
 # Exercice 1
 
 1. Créez une fonction `calculateSumAsync` qui prend deux nombres comme arguments et retourne une promesse (`Promise`) qui se résout à leur somme après un délai de 3 secondes.

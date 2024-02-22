@@ -12,8 +12,9 @@ Remarquez quand dans tscconfig.json, nous avons ajouté src/deezerOffline.ts dan
 
 [tsconfig.json](tsconfig.json ':include :type=code json')
 
-Changez dans le script dans le fichier `index.html` en remplaçant `app.js` par `deezerOffline.js` et vérifiez que tout fonctionne correctement pour tester le deuxième script.
+Changez le script dans le fichier `index.html` en remplaçant `app.js` par `deezerOffline.js` et vérifiez que tout fonctionne correctement pour tester le deuxième script.
 
+Pour rappel, vous pouvez accéder au code source de toutes les parties (à partie de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
 # Exercice
 
