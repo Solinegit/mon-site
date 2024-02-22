@@ -2,6 +2,8 @@
 
 :memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/10_json/README.md)
 
+Lisez d'abord https://www.json.org/json-fr.html pour comprendre ce qu'est le JSON.
+
 vous devez lire et comprendre le code source de `app.ts` que voici
 
 [src/app.ts](src/app.ts ":include :type=code typescript")
