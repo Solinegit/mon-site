@@ -2,13 +2,15 @@
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 
-[app.ts](app.ts ':include :type=code typescript')
+[src/app.ts](src/app.ts ':include :type=code typescript')
 
 ainsi que le code source de `deezerOffline.ts` que voici
 
-[deezerOffline.ts](deezerOffline.ts ':include :type=code typescript')
+[src/deezerOffline.ts](src/deezerOffline.ts ':include :type=code typescript')
 
-changez `index.html` pour remplacer `app.js` par `deezerOffline.js` et vérifiez que tout fonctionne correctement.
+Remarquez quand dans tscconfig.json, nous avons ajouté src/deezerOffline.ts dans la liste des fichiers à transpiler.
+
+Changez dans le script dans le fichier `index.html` en remplaçant `app.js` par `deezerOffline.js` et vérifiez que tout fonctionne correctement pour tester le deuxième script.
 
 
 # Exercice

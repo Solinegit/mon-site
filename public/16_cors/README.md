@@ -2,4 +2,10 @@
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 
-[app.ts](app.ts ':include :type=code typescript')
+[src/app.ts](src/app.ts ':include :type=code typescript')
+
+pour démarrer le proxy CORS, exécutez la commande suivante :
+
+```bash	
+npm start
+```
