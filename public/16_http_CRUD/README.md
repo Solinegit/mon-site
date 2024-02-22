@@ -30,6 +30,26 @@ Vous devez lire et comprendre le code source de `app.ts` que voici
 
 [src/app.ts](src/app.ts ":include :type=code typescript")
 
+Si vous exécutez une deuxième fois le code après ces modifications
+vous aurez deux problèmes:
+
+1. pour la suppression:
+There was a problem with the fetch operation:  Error: HTTP error! status: 404
+erreur 404 car le restaurant a déjà été supprimé et n'existe plus = introuvable
+
+2. pour la création:
+vous aurez en doublon le restaurant "Le Restaurant de la Joie"
+avec une nouvelle id
+car le serveur json-server ne gère pas les doublons
+
+Pas de problème pour la lecture ou la modification (car onles modifie avec les mêmes données)
+
+
+remarquez que les requêtes sont asynchrones
+et que l'ordre d'exécution n'est pas garanti
+
+remarquez aussi que restaurantCategories n'est pas géré
+
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
 # Exercice

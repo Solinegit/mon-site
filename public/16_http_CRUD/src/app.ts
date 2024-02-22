@@ -87,19 +87,4 @@ const updatedData = {
 const updateClient = new UpdateClient(`${url}/12b3`, updatedData);
 updateClient.execute();
 
-//Si vous exécutez une deuxième fois le code après ces modifications
-// vous aurez deux problèmes:
-// pour la suppression:
-// There was a problem with the fetch operation:  Error: HTTP error! status: 404
-// erreur 404 car le restaurant a déjà été supprimé et n'existe plus = introuvable
-// pour la création:
-// vous aurez en doublon le restaurant "Le Restaurant de la Joie"
-// avec une nouvelle id
-// car le serveur json-server ne gère pas les doublons
-// par contre pour la lecture, pas de problème car on lit les données
-// et pour la modification, pas de problème car on modifie avec les mêmes données
 
-//remarquez que les requêtes sont asynchrones
-// et que l'ordre d'exécution n'est pas garanti
-
-//remarquez aussi que restaurantCategories n'est pas géré
