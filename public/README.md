@@ -1,6 +1,6 @@
 # WebDev101 Telecom Paris par Rémi SHARROCK
 
-:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/)
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/README.md)
 
 
 Site contenant les travaux pratiques du cours Typescript pour le développement web en première année à Telecom Paris par Rémi SHARROCK.

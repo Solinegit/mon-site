@@ -1,5 +1,7 @@
 # flexbox CSS
 
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/06_CSS_flexbox/README.md)
+
 ## flexbox playground
 
 https://flexbox.tech/

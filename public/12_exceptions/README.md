@@ -1,5 +1,7 @@
 # Exceptions
 
+https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/12_exceptions/README.md)
+
 vous devez lire et comprendre le code source de `app.ts` que voici
 
 [src/app.ts](src/app.ts ':include :type=code typescript')
