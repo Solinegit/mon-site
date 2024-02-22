@@ -8,14 +8,16 @@ ainsi que le code source de `deezerOffline.ts` que voici
 
 [src/deezerOffline.ts](src/deezerOffline.ts ':include :type=code typescript')
 
-Remarquez quand dans tscconfig.json, nous avons ajouté src/deezerOffline.ts dans la liste des fichiers à transpiler.
+Remarquez quand dans tscconfig.json, nous avons ajouté src/deezerOffline.ts dans la liste des fichiers à transpiler:
+
+[src/tsconfig.json](src/tsconfig.json ':include :type=code json')
 
 Changez dans le script dans le fichier `index.html` en remplaçant `app.js` par `deezerOffline.js` et vérifiez que tout fonctionne correctement pour tester le deuxième script.
 
 
 # Exercice
 
-1. Créez une interface IUser qui représente un utilisateur avec les propriétés `id`, `name`, `age`, et un tableau de scores `scores` (qui sont des nombres entiers) et les méthodes `getMaxScore` et `getAverageScore`.
+1. Créez une interface `IUser` qui représente un utilisateur avec les propriétés `id`, `name`, `age`, et un tableau de scores `scores` (qui sont des nombres entiers) et les méthodes `getMaxScore` et `getAverageScore`.
 2. Créez une classe `User` qui implémente `IUser`
 3. Créez trois instances de `User`.
 4. Créez un tableau contenant des `IUser` (attention c'est bien des `IUser` et non des `User`) et mettez-y les trois instances de `User` que vous avez créées.
