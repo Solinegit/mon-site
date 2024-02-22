@@ -37,7 +37,10 @@ class DataService {
       const data = await this.fetchData();
       console.log(data);
     } catch (error) {
-      console.error('Une erreur est survenue lors de la récupération des données', error);
+      console.error(
+        "Une erreur est survenue lors de la récupération des données",
+        error
+      );
     }
   }
 }
