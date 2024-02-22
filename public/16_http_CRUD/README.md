@@ -41,7 +41,7 @@ vous aurez en doublon le restaurant "Le Restaurant de la Joie"
 avec une nouvelle id
 car le serveur json-server ne gère pas les doublons
 
-Pas de problème pour la lecture ou la modification (car onles modifie avec les mêmes données)
+Pas de problème pour la lecture ou la modification (car on les modifie avec les mêmes données)
 
 
 remarquez que les requêtes sont asynchrones
