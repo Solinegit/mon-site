@@ -10,7 +10,7 @@ ainsi que le code source de `deezerOffline.ts` que voici
 
 Remarquez quand dans tscconfig.json, nous avons ajouté src/deezerOffline.ts dans la liste des fichiers à transpiler:
 
-[src/tsconfig.json](src/tsconfig.json ':include :type=code json')
+[tsconfig.json](tsconfig.json ':include :type=code json')
 
 Changez dans le script dans le fichier `index.html` en remplaçant `app.js` par `deezerOffline.js` et vérifiez que tout fonctionne correctement pour tester le deuxième script.
 
