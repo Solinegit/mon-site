@@ -8,6 +8,9 @@ ainsi que le code source de `deezerOffline.ts` que voici
 
 [deezerOffline.ts](deezerOffline.ts ':include :type=code typescript')
 
+changez `index.html` pour remplacer `app.js` par `deezerOffline.js` et vérifiez que tout fonctionne correctement.
+
+
 # Exercice
 
 1. Créez une interface IUser qui représente un utilisateur avec les propriétés `id`, `name`, `age`, et un tableau de scores `scores` (qui sont des nombres entiers) et les méthodes `getMaxScore` et `getAverageScore`.
