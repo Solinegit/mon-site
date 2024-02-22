@@ -5,7 +5,7 @@
 
 Site contenant les travaux pratiques du cours Typescript pour le développement web en première année à Telecom Paris par Rémi SHARROCK.
 
-Le site pédagogique est hébergé sur eCampus, il contient les objectifs pédagogiques que vous devez absolument lire avant de commencer les travaux pratiques, ainsi que les modalité d'évaluation de ce cours. Il inclus également des ressources théoriques pour vous aider à réaliser les travaux pratiques, et des liens vers des ressources externes pour approfondir vos connaissances. Vous pouvez y accéder ici : 
+Le site pédagogique est hébergé sur eCampus, il contient les objectifs pédagogiques que vous devez absolument lire avant de commencer les travaux pratiques, ainsi que les modalités d'évaluation de ce cours. Il inclus également des ressources théoriques pour vous aider à réaliser les travaux pratiques, et des liens vers des ressources externes pour approfondir vos connaissances. Vous pouvez y accéder ici : 
 https://ecampus.paris-saclay.fr/course/view.php?id=118933
 
 Le code source du site sur lequel vous vous trouvez actuellement (pour les travaux pratiques) est intégralement disponible sur plusieurs dépôts GIT ici : 
