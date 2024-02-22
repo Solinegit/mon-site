@@ -5,13 +5,16 @@
 
 Site contenant les travaux pratiques du cours Typescript pour le développement web en première année à Telecom Paris par Rémi SHARROCK.
 
-Le site pédagogique est hébergé sur eCampus à cet endroit, il contient les objectifs pédagogiques que vous devez absolument lire avant de commencer les travaux pratiques, ainsi que les modalité d'évaluation de ce cours. Il inclus également des ressources théoriques pour vous aider à réaliser les travaux pratiques, et des liens vers des ressources externes pour approfondir vos connaissances. Vous pouvez y accéder ici : 
+Le site pédagogique est hébergé sur eCampus, il contient les objectifs pédagogiques que vous devez absolument lire avant de commencer les travaux pratiques, ainsi que les modalité d'évaluation de ce cours. Il inclus également des ressources théoriques pour vous aider à réaliser les travaux pratiques, et des liens vers des ressources externes pour approfondir vos connaissances. Vous pouvez y accéder ici : 
 https://ecampus.paris-saclay.fr/course/view.php?id=118933
 
-pour naviguer dans le site aller sur <https://webdev101.gitlab.io/>
-
-Le code source de ce site est disponible sur plusieurs dépôts GIT ici : 
+Le code source du site sur lequel vous vous trouvez actuellement (pour les travaux pratiques) est intégralement disponible sur plusieurs dépôts GIT ici : 
 https://gitlab.com/webdev101/
+
+# contributions au site
+Vous êtes invités à contribuer à ce site, en proposant des améliorations, des corrections, des ajouts, etc. Pour cela, vous pouvez cloner le dépôt de code source, apporter vos modifications, et soumettre une merge request. Pour plus d'informations sur comment contribuer à un projet hébergé sur gitlab, consultez la documentation ici : https://docs.gitlab.com/ee/user/project/repository/forking_workflow.html
+
+Parfois, vous trouverez un bouton "éditer cette page", qui vous permettra de modifier directement le contenu de la page depuis votre navigateur, sans avoir à cloner le dépôt de code source, et qui vous permettra de soumettre une merge request directement depuis votre navigateur.
 
 # préconisation de l'utilisation de l'éditeur Visual Studio Code
 Nous vous recommandons d'utiliser l'éditeur de code source Visual Studio Code (VSCode) pour les travaux pratiques. C'est un éditeur de code source très populaire, qui est gratuit, open source, et qui est très bien intégré avec GIT, l'outil de gestion de version de code source que nous allons utiliser pour les travaux pratiques. Il est aussi très bien intégré avec l'outil d'Intelligence Artificielle que nous allons utiliser pour les travaux pratiques, github copilot. Pour l'installer, suivez les instructions ici : https://code.visualstudio.com/download 
