@@ -6,7 +6,7 @@ CRUD signifie Create, Read, Update, Delete. C'est un acronyme qui désigne les q
 
 Attention dans le cas d'un UPDATE avec PUT ou PATCH, si l'objet à modifier n'existe pas ou n'est pas correctement identifié, le comportement du serveur est indéterminé: il peut créer de nouveaux objets ou renvoyer une erreur, cela dépend du serveur... 
 
-Dans ce TP nous allons démarrer un serveur HTTP et écrire une application en TypeScript qui va effectuer des opérations CRUD sur ce serveur. Pour cela nous utilisons le projet json-server qui est un serveur HTTP qui utilise un fichier JSON comme base de données. Nous avons un début de base de donnée dans le fichier `db.json` qui contient des restaurants et des catégories. Voici le contenu de ce fichier :
+Dans ce TP nous allons démarrer un serveur HTTP et écrire une application client en TypeScript qui va effectuer des opérations CRUD sur ce serveur. Pour cela nous utilisons le projet json-server qui est un serveur HTTP qui utilise un fichier JSON comme base de données. Nous avons un début de base de donnée dans le fichier `db.json` qui contient des restaurants et des catégories. Voici le contenu de ce fichier :
 
 [db.json](db.json ":include :type=code json")
 
