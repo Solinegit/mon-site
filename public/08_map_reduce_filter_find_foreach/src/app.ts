@@ -97,8 +97,10 @@ other_tab.forEach((x, i, arr) => (arr[i] = x * 2));
 console.log("Avec forEach: ", other_tab); // Affiche [2, 4, 6, 8, 10]
 
 // Exemple avec le talbeau initial
-// différence avec forEach (attention ici il y a un retour à la ligne à chaque console.log, donc pour chaque élément !)
-// forEach retourne void donc ne pas mettre le retour de forEach dans une variable sinon sa valeur sera undefined !
+// différence avec forEach (attention ici il y a un retour à la ligne 
+// à chaque console.log, donc pour chaque élément !)
+// forEach retourne void donc ne pas mettre le retour de forEach
+// dans une variable sinon sa valeur sera undefined !
 tab.forEach((x) => {
   x = fois2(x);
   console.log("for each (fois2): " + x);

@@ -42,7 +42,8 @@ const dataService = new DataService();
 dataService.retrieveData();
 
 //autre exemple
-// Une fonction qui retourne une promesse qui se résout si la lecture réussit, et se rejette si elle échoue
+// Une fonction qui retourne une promesse qui se résout
+// si la lecture réussit, et se rejette si elle échoue
 function readFile(filename: string): Promise<string> {
   return new Promise<string>((resolve, reject) => {
     // Simuler une opération de lecture de fichier

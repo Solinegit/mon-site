@@ -1,4 +1,5 @@
-//fetch the latest earthquake data from the USGS API with this url https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=yesterday&endtime=today&minmagnitude=4
+//fetch the latest earthquake data from the USGS API with this url
+// https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=yesterday&endtime=today&minmagnitude=4
 
 interface Earthquake {
   properties: {
@@ -24,7 +25,8 @@ class EarthquakeService {
   // - the place of the earthquake
   // and display it on the page as well as in the console
   async displayEarthquakes() {
-    const earthquakes = await this.getEarthquakesFromUSGS(); // Await the promise to resolve
+    // Await the promise to resolve
+    const earthquakes = await this.getEarthquakesFromUSGS();
     const ul: HTMLUListElement = document.createElement("ul");
     earthquakes.forEach((earthquake) => {
       // Use forEach on the resolved earthquakes array

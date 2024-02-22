@@ -45,7 +45,8 @@ class User implements UserInterface {
   }
 }
 
-//création d'objets (instanciés depuis la classe User qui implémente l'interface UserInterface)
+//création d'objets (instanciés depuis la classe User
+//qui implémente l'interface UserInterface)
 
 let u1, u2: UserInterface;
 u1 = new User("456", "Eya", 23, [2.4, 34]);
@@ -60,7 +61,8 @@ let u3: UserInterface = {
   scores: [31.4, 29.9, 35.7],
 };
 
-//création d'un tableau de 3 objets (instanciés depuis la classe User qui implémente l'interface UserInterface)
+//création d'un tableau de 3 objets (instanciés depuis la classe Use
+//qui implémente l'interface UserInterface)
 
 let users2: UserInterface[] = [u1, u2, u3];
 

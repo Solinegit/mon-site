@@ -1,4 +1,5 @@
-//Supposons que nous voulons créer une classe GenericStorage qui peut stocker des éléments de n'importe quel type :
+//Supposons que nous voulons créer une classe GenericStorage
+//qui peut stocker des éléments de n'importe quel type :
 
 class GenericStorage<T> {
   private data: Map<string, T> = new Map();

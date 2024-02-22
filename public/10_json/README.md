@@ -18,7 +18,7 @@ Remarquez aussi que dans le fichier `index.html`, nous avons ajouté un lien ver
 
 [index.html](index.html ":include :type=code html")
 
-Pour rappel, vous pouvez accéder au code source de toutes les parties (à partie de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
+Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
 # Exercice
 
