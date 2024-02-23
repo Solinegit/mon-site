@@ -1,6 +1,6 @@
 # HTTP CRUD
 
-:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/15_http/README.md)
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/16_http_CRUD/README.md)
 
 Le protocole HTTP (HyperText Transfer Protocol) est un protocole de communication client-serveur. Il est utilisé pour le transfert de données sur le World Wide Web. Il est basé sur le modèle requête/réponse. Les requêtes sont envoyées par le client et les réponses sont renvoyées par le serveur. Les requêtes et les réponses sont composées, entre autres, d'un statut, d'un header, d'une méthode (GET, POST, PUT, PATCH, DELETE, etc) et d'un corps (body).
 
