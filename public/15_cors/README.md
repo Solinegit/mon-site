@@ -29,7 +29,8 @@ Dans notre exemple, vous devez avoir un serveur proxy en cours d'exécution sur 
 Pour pouvoir tester cette application, vous devez d'abord démarrer le proxy CORS, en exécutant la commande suivante :
 
 ```terminal
-npm start
+npm install
+node proxycors.js
 ```
 
 Cette commande utilise npm, le gestionnaire de paquets de Node.js, configuré avec package.json. Dans la configuration de package.json, nous utilisons le package cors.js qui sera téléchargé et installé automatiquement lors de l'exécution de la commande npm start. Nous utilisons ce package dans le fichier `proxycors.js`que vous pouvez consulter ci-dessous. Attention ce fichier est en javascript et non en typescript. Vous n'êtes pas obligé de comprendre son fonctionnement pour le moment.
