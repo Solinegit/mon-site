@@ -17,4 +17,3 @@
 * [14 fetch](14_fetch/)
 * [15 cors](15_cors/)
 * [16 http CRUD](16_http_CRUD/)
-* [17 JWT](17_JWT/)
