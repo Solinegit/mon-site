@@ -1,23 +1,23 @@
 interface AlloResto {
-  restaurants:          Restaurant[];
-  categories:           Category[];
+  restaurants: Restaurant[];
+  categories: Category[];
   restaurantCategories: RestaurantCategory[];
 }
 
 interface Category {
-  id?:            string;
-  name?:          string;
+  id?: string;
+  name?: string;
   restaurantIds?: string[];
 }
 
 interface RestaurantCategory {
   restaurantId?: string;
-  categoryId?:   string;
+  categoryId?: string;
 }
 
 interface Restaurant {
-  id?:          string;
-  name?:        string;
+  id?: string;
+  name?: string;
   description?: string;
   categoryIds?: string[];
 }
@@ -37,15 +37,13 @@ abstract class HttpClient<T> {
     };
   }
 
-  public async execute(): Promise<T | void>{
+  public async execute(): Promise<T | void> {
     try {
       const response = await fetch(this.url, this.options);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data : T = await response.json(); //extraction du corps de la réponse au format JSON
-      console.log(data);
+      if (response.ok) {
+      const data: T = await response.json(); //extraction du corps de la réponse au format JSON
       return data;
+      }
     } catch (error) {
       console.error("There was a problem with the fetch operation: ", error);
     }
@@ -89,15 +87,18 @@ const readClient = new ReadClient<Restaurant[]>(url);
 readClient.execute().then((restaurants) => {
   if (restaurants) {
     restaurants.forEach((restaurant) => {
-      console.log(restaurant.name);
+      console.log(`READ id : ${restaurant.id} name : ${restaurant.name} `);
     });
   }
 });
 
-
 //suppression du restaurant "Le Café Rigolo"
-const deleteClient = new DeleteClient(`${url}/3aa8`);
-deleteClient.execute();
+const deleteClient = new DeleteClient<Restaurant>(`${url}/3aa8`);
+deleteClient.execute().then((restaurant) => {
+  if (restaurant) {
+    console.log(`DELETE id : ${restaurant.id} name : ${restaurant.name} `);
+  }
+});
 
 //création du restaurant "Le Restaurant de la Joie"
 const data: Restaurant = {
@@ -107,14 +108,32 @@ const data: Restaurant = {
 };
 
 const createClient = new CreateClient<Restaurant>(url, data);
-createClient.execute();
+createClient.execute().then((restaurant) => {
+  if (restaurant) {
+    console.log(`CREATE id : ${restaurant.id} name : ${restaurant.name} `);
+  }
+});
 
 //modification du restaurant "Le Grill Marrant" pour le renommer "Le Grill Super Marrant"
-const updatedData : Restaurant= {
+const updatedData: Restaurant = {
   name: "Le Grill Super Marrant",
 };
 
 const updateClient = new UpdateClient<Restaurant>(`${url}/12b3`, updatedData);
-updateClient.execute();
+updateClient.execute().then((restaurant) => {
+  if (restaurant) {
+    console.log(`UPDATE id : ${restaurant.id} name : ${restaurant.name} `);
+  }
+});
 
+/*la sortie de la console devrait être : (attention à l'order des opérations asynchrones 
+qui peut varier à chaque exécution du code)
 
+READ id : a45d name : Le Bistrot du Rire 
+READ id : 12b3 name : Le Grill Marrant 
+READ id : 3aa8 name : Le Café Rigolo 
+READ id : 55fa name : La Crêperie Rigolote 
+DELETE id : 3aa8 name : Le Café Rigolo 
+UPDATE id : 12b3 name : Le Grill Super Marrant 
+CREATE id : 82ef name : Le Restaurant de la Joie 
+ */

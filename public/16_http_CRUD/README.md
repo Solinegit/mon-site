@@ -49,8 +49,7 @@ Vous devez lire et comprendre le code source de `app.ts` que voici
 Si vous exécutez une deuxième fois le code, les modifications ayant déjà été effectuées,
 vous aurez deux problèmes:
 
-1. pour la suppression:
-`There was a problem with the fetch operation:  Error: HTTP error! status: 404` : erreur 404 car le restaurant a déjà été supprimé et n'existe plus = introuvable = 404
+1. pour la suppression: erreur 404 car le restaurant a déjà été supprimé et n'existe plus = introuvable = 404
 
 1. pour la création:
 vous aurez en doublon le restaurant "Le Restaurant de la Joie"
