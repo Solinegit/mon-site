@@ -25,13 +25,13 @@ Voici les modalités d'évaluation de cette unité d'enseignement:
 
 1. Micro-projet 2048 : Les étudiants réaliseront un micro-projet basé sur le jeu 2048. Ils devront soumettre leur code accompagné d'un enregistrement vidéo d'explication de moins de 2 minutes. Cette vidéo devra détailler les choix de conception et les fonctionnalités implémentées. Cette partie est évaluée sur 1 point.
    
-2. Exercices des travaux pratiques : Les étudiants réaliseront tous les exercices des travaux pratiques qui seront remis. Cette partie est évaluée sur 1 point.
+2. Exercices des travaux pratiques : Les étudiants réaliseront tous les exercices des travaux pratiques qui seront remis. Cette partie est évaluée sur 2 points.
 
 3. Site internet de démonstration : Les étudiants devront créer un site internet regroupant toutes leurs productions: vidéos d'explication et de démonstration, applications développées: exercices des travaux pratiques, micro-projet, projet final. Ce site sera évalué sur sa fonctionnalité (tous les exercices doivent être fonctionnels), son design, et la facilité d'accès aux différents projets. Cette partie est évaluée sur 1 point.
 
 4. Projet de développement final: Les étudiants travailleront sur un projet de développement plus important, nécessitant une application approfondie des connaissances acquises. L'évaluation portera sur la qualité du code rendu (3 points / 8), la fonctionnalité de l'application développée (2 points / 8), ainsi qu'une vidéo de démonstration de moins de 2 minutes (1 point / 8). La présentation entre pairs et le rendu sur la forge gitlab.telecom-paris.fr incluant l'intégralité du code source et de l'historique de modification après chaque séance de travail seront également pris en compte (1 point / 8). La documentation précise pour les utilisateurs (comment installer et utiliser l'application) et pour les développeurs (comment configurer tout l'environnement de développement pour qu'un autre contributeur puisse contribuer) devront être présents (1 point / 8). Cette partie est évaluée sur un total de 8 points.
 
-5. Examen final sous forme de QCM : Un examen final composé de questions à choix multiples (QCM) portant sur l'ensemble du programme de l'unité d'enseignement. Les questions couvriront les aspects théoriques et pratiques de TypeScript, par rapport à tous les objectifs pédagogiques de l'unité d'enseignement. Cet examen est évalué sur 9 points.
+5. Examen final sous forme de QCM : Un examen final composé de questions à choix multiples (QCM) portant sur l'ensemble du programme de l'unité d'enseignement. Les questions couvriront les aspects théoriques et pratiques de TypeScript, par rapport à tous les objectifs pédagogiques de l'unité d'enseignement. Cet examen est évalué sur 8 points.
 
 Ces modalités d'évaluation sont conçues pour apprécier à la fois la compréhension théorique des étudiants et leur capacité à appliquer ces connaissances dans des projets pratiques, tout en valorisant la communication et la présentation de leurs travaux.
 
