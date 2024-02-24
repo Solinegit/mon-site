@@ -50,6 +50,10 @@ Parfois, vous trouverez un bouton "éditer cette page", qui vous permettra de mo
 
 Nous vous recommandons d'utiliser l'éditeur de code source Visual Studio Code (VSCode) pour les travaux pratiques. C'est un éditeur de code source très populaire, qui est gratuit, open source, et qui est très bien intégré avec GIT, l'outil de gestion de version de code source que nous allons utiliser pour les travaux pratiques. Il est aussi très bien intégré avec l'outil d'Intelligence Artificielle que nous allons utiliser pour les travaux pratiques, github copilot. Pour l'installer, suivez les instructions ici : https://code.visualstudio.com/download
 
+# préconisation de l'utilisation du navigateur web Chrome
+
+Nous vous recommandons d'utiliser le navigateur web Chrome pour les travaux pratiques. Tous les exemples donnés dans ce cours ont été testés avec ce navigateur, et il est très bien intégré avec les outils de développement web que nous allons utiliser.
+
 # utilisation de l'IA durant les travaux pratiques
 
 Pour simuler les conditions d'un environnement de travail professionnel avant-gardiste, nous allons utiliser un outil d'Intelligence Artificielle pour vous aider à résoudre les problèmes que vous rencontrerez, pour vous guider lors de vos développements. Cet outil est un chatbot intégré à Visual Studio Code, qui s'appelle github copilot. Il est basé sur l'IA de OpenAI (chat-gpt), et il est capable de générer du code en fonction de ce que vous lui demandez. Il est aussi capable de comprendre le contexte de votre code, et de vous proposer des solutions pour le compléter, de vous proposer des explications sur des concepts, de vous aider à écrire des tests, générer la documentation, comprendre des erreurs, refactoriser du code (c'est à dire le réécrire pour le rendre plus lisible, plus performant, plus maintenable), etc.
