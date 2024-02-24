@@ -6,4 +6,11 @@
 
 [src/app.ts](src/app.ts ":include :type=code typescript")
 
+# Lecture
+
+vous pouvez approfondir sur la page https://developer.mozilla.org/fr/docs/Learn/Forms 
+
+en particulier https://developer.mozilla.org/fr/docs/Learn/Forms/Your_first_form et https://developer.mozilla.org/fr/docs/Learn/Forms/HTML5_input_types  sont des ressources intéressantes
+
 # Exercice 
+

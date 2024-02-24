@@ -80,6 +80,10 @@ this.options = {
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
+# Lecture
+
+pas de lecture particulière si vous voulez approfondir vous pouvez parcourir https://developer.mozilla.org/fr/docs/Web/HTTP
+
 # Exercice
 
 Modifiez le fichier `app.ts` pour bien gérer les modifications des relations entre les restaurants et les catégories:
