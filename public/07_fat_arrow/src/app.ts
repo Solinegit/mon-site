@@ -2,8 +2,8 @@
 //(<paramètres> ...) => { instructions }
 
 // Premier exemple avec instructions
-let ajouter = (a: number, b: number) => {
-  let somme = a + b;
+const ajouter = (a: number, b: number) => {
+  const somme = a + b;
   console.log(`La somme est: ${somme}`);
 };
 ajouter(5, 3); // Affiche "La somme est: 8"
@@ -12,5 +12,5 @@ ajouter(5, 3); // Affiche "La somme est: 8"
 //(<paramètres> ...) => <expression>
 
 // Deuxième exemple avec expression
-let multiplier = (a: number, b: number) => a * b;
+const multiplier = (a: number, b: number) => a * b;
 console.log(multiplier(5, 3)); // Affiche "15"

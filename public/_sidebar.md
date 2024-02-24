@@ -7,7 +7,7 @@
 * [04 debug](04_debug/)
 * [05 html css 2048](05_html_css_2048/)
 * [06 CSS flexbox](06_CSS_flexbox/)
-* [07 anonymous functions](07_anonymous_functions/)
+* [07 fat arrow](07_fat_arrow/)
 * [08 map reduce filter find foreach](08_map_reduce_filter_find_foreach/)
 * [09 objects](09_objects/)
 * [10 json](10_json/)

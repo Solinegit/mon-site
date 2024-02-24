@@ -83,13 +83,59 @@ class Admin extends Person {
   }
 }
 
-const persons: Person[] = [
+//il vaut mieux toujours utiliser l'interface pour déclarer le type
+//plutôt que la classe abstraite
+const persons: PersonInterface[] = [
   new User("Max", 30, "Frontend Developer"),
   new Admin("Max", 30, "Administrator"),
 ];
 
-persons.forEach((person: Person) => person.logPerson());
+persons.forEach((person: PersonInterface) => person.logPerson());
 
 console.log("Filter Users only");
-const usersOnly = persons.filter((person: Person) => person instanceof User);
+//ici le as User est nécessaire pour dire à TypeScript que le filter
+//retourne un tableau de User et non de Person ou de PersonInterface
+const usersOnly: User[] = persons.filter(
+  (person: PersonInterface) => person instanceof User
+) as User[];
 usersOnly.forEach((person: Person) => person.logPerson());
+
+// composition
+
+class Point {
+  x: number;
+  y: number;
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
+  }
+}
+
+//un vecteur est composé de deux points
+
+interface Distance {
+  distanceTo(Vector: Vector): number;
+}
+
+class Vector implements Distance {
+  start: Point;
+  end: Point;
+  constructor(start: Point, end: Point) {
+    this.start = start;
+    this.end = end;
+  }
+
+  distanceTo(Vector: Vector): number {
+    const dx = this.end.x - this.start.x;
+    const dy = this.end.y - this.start.y;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+}
+
+const p1: Point = new Point(2, 3);
+const p2: Point = new Point(5, 6);
+const p3: Point = new Point(7, 9);
+const p4: Point = new Point(10, 12);
+let v1: Vector = new Vector(p1, p2);
+let v2: Vector = new Vector(p3, p4);
+console.log("Distance between v1 and v2", v1.distanceTo(v2));
