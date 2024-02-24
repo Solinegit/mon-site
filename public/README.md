@@ -4,8 +4,38 @@
 
 Site contenant les travaux pratiques du cours Typescript pour le développement web en première année à Telecom Paris par Rémi SHARROCK.
 
-Le site pédagogique est hébergé sur eCampus, il contient les objectifs pédagogiques que vous devez absolument lire avant de commencer les travaux pratiques, ainsi que les modalités d'évaluation de ce cours. Il inclus également des ressources théoriques pour vous aider à réaliser les travaux pratiques, et des liens vers des ressources externes pour approfondir vos connaissances. Vous pouvez y accéder ici :
+# site pédagogique
+
+Le site pédagogique est hébergé sur eCampus, il contient des ressources théoriques pour vous aider à réaliser les travaux pratiques, des modalités d'organisation, des activités d'évaluation, des annonces, un forum, et des liens vers des ressources externes pour approfondir vos connaissances. Vous pouvez y accéder ici :
 https://ecampus.paris-saclay.fr/course/view.php?id=118933
+
+# Objectifs pédagogiques
+
+1. Installer, configurer et utiliser un environnement de développement complet: IDE, outillage nécessaire comme tsconfig, npm, IA d'aide au codage, devtools et debugger, test, linter.
+
+2. Développer en TypeScript en utilisant les concepts de programmation orientée objet (interfaces, abstraction, héritage, polymorphisme, generics) en appliquant les principes SOLID et les fondamentaux de la programmation fonctionnelle (fonctions fléchées, fonctions outils, opérations asynchrones) ou événementielle (exceptions, eventlisteners).
+
+3. Intégrer des technologies web: HTML, CSS (flexbox), HTTP CRUD pour les API REST (avec et sans authentification), contourner les restrictions CORS avec un proxy.
+
+4. Gérer le développement de projets logiciels avec le contrôle de version via Git et collaborer sur des forges telles que gitlab.telecom-paris.fr afin de réaliser une application de visualisation de données, utilisant une API (choisie, par exemple, sur data.gouv.fr), avec un focus sur l'analyse de données liées aux transitions sociales et environnementales.
+
+# Modalités d'évaluation
+
+Voici les modalités d'évaluation de cette unité d'enseignement:
+
+1. Micro-projet 2048 : Les étudiants réaliseront un micro-projet basé sur le jeu 2048. Ils devront soumettre leur code accompagné d'un enregistrement vidéo d'explication de moins de 2 minutes. Cette vidéo devra détailler les choix de conception et les fonctionnalités implémentées. Cette partie est évaluée sur 1 point.
+   
+2. Exercices des travaux pratiques : Les étudiants réaliseront tous les exercices des travaux pratiques qui seront remis. Cette partie est évaluée sur 1 point.
+
+3. Site internet de démonstration : Les étudiants devront créer un site internet regroupant toutes leurs productions: vidéos d'explication et de démonstration, applications développées: exercices des travaux pratiques, micro-projet, projet final. Ce site sera évalué sur sa fonctionnalité (tous les exercices doivent être fonctionnels), son design, et la facilité d'accès aux différents projets. Cette partie est évaluée sur 1 point.
+
+4. Projet de développement final: Les étudiants travailleront sur un projet de développement plus important, nécessitant une application approfondie des connaissances acquises. L'évaluation portera sur la qualité du code rendu (3 points / 8), la fonctionnalité de l'application développée (2 points / 8), ainsi qu'une vidéo de démonstration de moins de 2 minutes (1 point / 8). La présentation entre pairs et le rendu sur la forge gitlab.telecom-paris.fr incluant l'intégralité du code source et de l'historique de modification après chaque séance de travail seront également pris en compte (1 point / 8). La documentation précise pour les utilisateurs (comment installer et utiliser l'application) et pour les développeurs (comment configurer tout l'environnement de développement pour qu'un autre contributeur puisse contribuer) devront être présents (1 point / 8). Cette partie est évaluée sur un total de 8 points.
+
+5. Examen final sous forme de QCM : Un examen final composé de questions à choix multiples (QCM) portant sur l'ensemble du programme de l'unité d'enseignement. Les questions couvriront les aspects théoriques et pratiques de TypeScript, par rapport à tous les objectifs pédagogiques de l'unité d'enseignement. Cet examen est évalué sur 9 points.
+
+Ces modalités d'évaluation sont conçues pour apprécier à la fois la compréhension théorique des étudiants et leur capacité à appliquer ces connaissances dans des projets pratiques, tout en valorisant la communication et la présentation de leurs travaux.
+
+# code source du site
 
 Le code source du site sur lequel vous vous trouvez actuellement (pour les travaux pratiques) est intégralement disponible sur plusieurs dépôts GIT ici :
 https://gitlab.com/webdev101/
