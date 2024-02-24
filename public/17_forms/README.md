@@ -1,5 +1,7 @@
 # utiliser les FORMS en typescript
 
+!> **Attention** ceci est une page en cours de construction, elle n'est pas encore complète.
+
 :memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/17_forms/README.md)
 
 [index.html](index.html ":include :type=code html")
