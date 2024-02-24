@@ -17,6 +17,11 @@ vous devez lire et comprendre le code source de `app.ts` que voici
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
+# Lecture
+
+pas de lecture en particulier, si ce n'est la documentation de l'API `fetch` de JavaScript (et non TypeScript) : https://developer.mozilla.org/en-US/docs/Web/API/fetch
+
+
 # Exercice Création d'un service de recherche d'adresses en France
 
 ?> _Objectif_ Créer une application simple qui utilise l'API de recherche d'adresses en France

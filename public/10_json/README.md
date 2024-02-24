@@ -70,6 +70,10 @@ Remarquez aussi que dans le fichier `index.html`, nous avons ajouté un lien ver
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
+# lecture
+
+https://www.json.org/json-fr.html
+
 # Exercice
 
 1. Créez une interface `IUser` qui représente un utilisateur avec les propriétés `id`, `name`, `age`, et un tableau de scores `scores` (qui sont des nombres entiers) et les méthodes `getMaxScore` et `getAverageScore`.

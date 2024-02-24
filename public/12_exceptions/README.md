@@ -20,6 +20,10 @@ vous devez lire et comprendre le code source de `app.ts` que voici
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
+# lecture
+
+21 Gestion des exceptions.pdf
+
 # Exercice
 
 1. Créer la classe `Rectangle` avec les propriétés `longueur` et `largeur` et un constructeur qui prend deux paramètres pour initialiser ces propriétés.

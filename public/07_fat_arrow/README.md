@@ -18,7 +18,13 @@ Vous devez lire et comprendre le code source de `app.ts` que voici
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
+# lecture
+
+19 Fonctions.pdf  partie  4. This et les fonctions fléchées 
+
 # Exercice : Calculatrice simple
+
+Faites une application de calculatrice.
 
 Créez une fonction fléchée **additionner** qui prend deux nombres en paramètres et retourne leur somme. Utilisez une expression pour le corps de la fonction.
 

@@ -13,6 +13,8 @@ interface GenreAPI {
   data: GenreInterface[];
 }
 
+//interfaces générées à partir du site quicktype.io
+
 async function getGenresFromDeezer() {
   const response = await fetch(
     "http://localhost:8088/https://api.deezer.com/genre/"

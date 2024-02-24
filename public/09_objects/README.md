@@ -28,10 +28,39 @@ Vous devez lire et comprendre le code source de `app.ts` que voici
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
+# lecture
+
+22 Introduction.pdf
+
+23 Les classes.pdf
+
+24 Les proprietes.pdf
+
+25 Les methodes.pdf
+
+26 Les constructeurs.pdf
+
+27 Le statisme.pdf
+
+28 L'accessibilite des membres.pdf
+
+29 L'encapsulation.pdf
+
+30 L'heritage.pdf
+
+31 L'abstraction.pdf
+
+32 Les interfaces.pdf
+
+33 Le polymorphisme.pdf
+
+34 Les principes SOLID.pdf
+
 # Exercice
 
 1. Créez une interface `IVehicle` qui définit une méthode `drive` qui renvoie `void`.
 2. Créez une classe abstraite `Vehicle` qui implémente `IVehicle` et qui a une propriété `speed` et une méthode abstraite `honk` (qui renvoie `void`) et qui donne l'implémentation de `drive` = affichage de `Driving at ${this.speed} km/h` dans la console.
 3. Créez une classe `Car` qui étend `Vehicle` et implémente la méthode `honk` = affichage de "Beep beep!" dans la console.
 4. Créez une classe `Bicycle` qui étend `Vehicle` et implémente la méthode `honk` = affichage de "Ring Ring" dans la console.
-5. Créez deux instances de Car et trois de Bicycle, et appelez les méthodes drive et honk sur les cinq instances.
+5. Créez deux instances de Car et trois de Bicycle et ajoutez-les à un tableau `vehicles` de type `IVehicle[]` (on utilise plutôt l'interface que la classe abstraite pour déclarer le type des éléments du tableau).
+6. Parcourez le tableau `vehicles` avec une boucle `for...of` et appelez les méthodes `drive` et `honk` à chaque itération.

@@ -69,3 +69,7 @@ Pour travailler sur les TP, vous aurez besoin de GIT, un outil de gestion de ver
 La gestion de version avec git est intégrée à visual studio code (VSCode), la documentation est disponible ici : https://code.visualstudio.com/docs/sourcecontrol/overview
 
 Vous devrez utiliser la forge https://gitlab.telecom-paris.fr pour héberger vos dépôts de code source, votre enseignant va vous créer un dépôt pour ce cours sur cette forge.
+
+# effacer le cache du navigateur pour voir les modifications de ce site
+
+Il est possible que vous ne voyiez pas les modifications apportées à ce site si vous avez déjà visité cette page avant. Cela est dû au cache de votre navigateur. Pour voir les modifications, vous pouvez soit effacer le cache de votre navigateur (cherchez sur internet comment faire) ou bien appuyer sur les touches `CTRL` + `F5` pour forcer le navigateur à recharger la page sans utiliser le cache.

@@ -65,6 +65,16 @@ vous devez lire et comprendre le code source de `app.ts` que voici
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
+# lecture
+
+48 Introduction.pdf
+
+49 Callback hell.pdf
+
+50 Promesse.pdf
+
+51 Asyncawait.pdf
+
 # Exercice 1
 
 1. Créez une fonction `calculateSumAsync` qui prend deux nombres comme arguments et retourne une promesse (`Promise`) qui se résout à leur somme après un délai de 3 secondes.

@@ -26,6 +26,18 @@ vous devez lire et comprendre le code source de `app.ts` que voici
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
+# lecture
+
+40 Introduction.pdf
+
+41 Declaration de base.pdf
+
+42 Classes et interfaces.pdf
+
+43 Contraintes.pdf
+
+44 Generique et constructeur.pdf
+
 # Exercice
 
 1. Créez une classe `Queue` qui utilise les génériques. Cette classe doit avoir les méthodes suivantes :

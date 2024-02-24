@@ -139,3 +139,29 @@ const p4: Point = new Point(10, 12);
 let v1: Vector = new Vector(p1, p2);
 let v2: Vector = new Vector(p3, p4);
 console.log("Distance between v1 and v2", v1.distanceTo(v2));
+
+//statisme 
+
+class Numero {
+  static numeroStatique: number = 0;
+  numero: number = 0;
+  constructor() {
+    Numero.numeroStatique++;
+    this.numero++;
+  }
+  getNumeroStatique(): number {
+    return Numero.numeroStatique;
+  }
+  getNumero(): number {
+    return this.numero;
+  }
+}
+
+const n1: Numero = new Numero();
+const n2: Numero = new Numero();
+const n3: Numero = new Numero();
+console.log("n1", n1.getNumeroStatique(), n1.getNumero());
+console.log("n2", n2.getNumeroStatique(), n2.getNumero());
+console.log("n3", n3.getNumeroStatique(), n3.getNumero());
+console.log("numeroStatique", Numero.numeroStatique);
+

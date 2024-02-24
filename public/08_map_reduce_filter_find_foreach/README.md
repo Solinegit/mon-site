@@ -15,6 +15,12 @@ Vous devez lire et comprendre le code source de `app.ts` que voici
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
+# lecture
+
+09 Types basiques.pdf   partie 1 2 3 et 4
+
+https://www.tutorialspoint.com/typescript/typescript_arrays.htm
+
 # Exercice des fruits des fruits des fruits!
 
 1. Créez un tableau de chaînes de caractères qui représentent des noms de fruits (la tableau initial): "pomme", "kiwi", "banane", "cerise", "orange", "poire", "fraise", "prune", "ananas", "pêche"
