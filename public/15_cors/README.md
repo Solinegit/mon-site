@@ -1,7 +1,5 @@
 # CORS (Cross-Origin Resource Sharing)
 
-!> **Attention** page en cours de création, vous voyez une version incomplète de la page.
-
 :memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/15_cors/README.md)
 
 Ce code interagit avec l'API de Deezer pour récupérer et afficher une liste de genres musicaux.
