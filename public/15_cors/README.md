@@ -31,11 +31,9 @@ npm install
 node proxycors.js
 ```
 
-Cette commande utilise npm, le gestionnaire de paquets de Node.js, configuré avec package.json. Dans la configuration de package.json, nous utilisons le package cors.js qui sera téléchargé et installé automatiquement lors de l'exécution de la commande npm start. Nous utilisons ce package dans le fichier `proxycors.js`que vous pouvez consulter ci-dessous. Attention ce fichier est en javascript et non en typescript. Vous n'êtes pas obligé de comprendre son fonctionnement pour le moment.
+Cette commande utilise npm, le gestionnaire de paquets de Node.js, configuré avec package.json. Dans la configuration de package.json, nous utilisons le package cors.js qui sera téléchargé et installé automatiquement. Nous utilisons ce package dans le fichier `proxycors.js`. Attention ce fichier est en javascript et non en typescript. Vous n'êtes pas obligé de comprendre son code.
 
-[proxycors.js](proxycors.js ":include :type=code javascript")
-
-vous devez lire et comprendre le code source de `app.ts` que voici ainsi que vérifier son fonctionnement en démarrant le proxy cors, en transpilant avec `tsc` et en exécutant `index.html` dans votre navigateur.
+Vous devez lire et comprendre le code source de `app.ts` que voici ainsi que vérifier son fonctionnement en démarrant le proxy cors, en transpilant avec `tsc` et en exécutant `index.html` dans votre navigateur.
 
 [src/app.ts](src/app.ts ":include :type=code typescript")
 

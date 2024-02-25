@@ -12,6 +12,8 @@ Dans ce cas, le corps de la fonction est une expression simple qui est directeme
 
 La principale différence entre les deux est que les fonctions avec instructions peuvent contenir plusieurs lignes de code et ne retournent pas automatiquement une valeur, tandis que les fonctions avec expressions sont plus courtes et retournent directement le résultat de l'expression.
 
+Nous donnons aussi d'autres exemples: fonction fléchée qui ne prend pas de paramètre, appelée à intervalle régulier ou après un délai, avec accès à des variables extérieures,passée en paramètre d'une autre fonction.
+
 Vous devez lire et comprendre le code source de `app.ts` que voici
 
 [src/app.ts](src/app.ts ":include :type=code typescript")
@@ -20,9 +22,9 @@ Pour rappel, vous pouvez accéder au code source de toutes les parties (à parti
 
 # lecture
 
-19 Fonctions.pdf  partie  4. This et les fonctions fléchées 
+19 Fonctions.pdf  partie  4. This et les fonctions fléchées   (la partie explicative de this sera comprise plus tard)
 
-# Exercice : Calculatrice simple
+# Exercice 1 : Calculatrice simple
 
 Faites une application de calculatrice.
 
@@ -43,3 +45,10 @@ calculatrice(5, 3, "additionner");
 ```
 
 doit afficher "La somme est: 8".
+
+# Exercice 2 : affichage des coordonnées de la souris toutes les secondes
+
+Faites une application qui affiche les coordonnées de la souris toutes les secondes.
+Vous pouvez vous aider de la documentation de l'objet `MouseEvent` : 
+https://developer.mozilla.org/fr/docs/Web/API/MouseEvent
+
