@@ -73,3 +73,20 @@ Vous devrez utiliser la forge https://gitlab.telecom-paris.fr pour héberger vos
 # effacer le cache du navigateur pour voir les modifications de ce site
 
 Il est possible que vous ne voyiez pas les modifications apportées à ce site si vous avez déjà visité cette page avant. Cela est dû au cache de votre navigateur. Pour voir les modifications, vous pouvez soit effacer le cache de votre navigateur (cherchez sur internet comment faire) ou bien appuyer sur les touches `CTRL` + `F5` pour forcer le navigateur à recharger la page sans utiliser le cache.
+
+# Tentative de programmation 2024
+
+TH1 28 février: 01 02 03 04
+TH2 28 février: 05
+TH3 6 mars: 06 07 08
+TH4 6 mars: 09 10
+TH5 22 mars: 11
+TH6 27 mars: 12
+TH7 27 mars: 13
+TH8 29 mars: 14 (Attention cette séance sera déplacée)
+TH9 2 avril: 15
+TH10 3 avril: 16
+TH11 3 avril: 17
+TH12 10 avril: projet final
+TH13 10 avril: projet final
+TH14 22 avril  Contrôle final
