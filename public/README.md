@@ -76,17 +76,17 @@ Il est possible que vous ne voyiez pas les modifications apportées à ce site s
 
 # Tentative de programmation 2024
 
-TH1 28 février: 01 02 03 04
-TH2 28 février: 05
-TH3 6 mars: 06 07 08
-TH4 6 mars: 09 10
-TH5 22 mars: 11
-TH6 27 mars: 12
-TH7 27 mars: 13
-TH8 29 mars: 14 (Attention cette séance sera déplacée)
-TH9 2 avril: 15
-TH10 3 avril: 16
-TH11 3 avril: 17
-TH12 10 avril: projet final
-TH13 10 avril: projet final
-TH14 22 avril  Contrôle final
+- TH1 28 février: 01 02 03 04
+- TH2 28 février: 05
+- TH3 6 mars: 06 07 08
+- TH4 6 mars: 09 10
+- TH5 22 mars: 11
+- TH6 27 mars: 12
+- TH7 27 mars: 13
+- TH8 29 mars: 14 (Attention cette séance sera déplacée)
+- TH9 2 avril: 15
+- TH10 3 avril: 16
+- TH11 3 avril: 17
+- TH12 10 avril: projet final
+- TH13 10 avril: projet final
+- TH14 22 avril  Contrôle final
