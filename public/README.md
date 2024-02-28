@@ -87,8 +87,7 @@ Il est possible que vous ne voyiez pas les modifications apportées à ce site s
 - TH6 27 mars: **12**
 - TH7 27 mars: **13**
 - Travail maison: terminer 13
-- TH8 29 mars: **14** (Attention cette séance sera déplacée)
-- Travail maison: terminer 14
+- TH8 2 avril: **14**
 - TH9 2 avril: **15**
 - TH10 3 avril: **16**
 - TH11 3 avril: **17**
