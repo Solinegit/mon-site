@@ -8,6 +8,10 @@ class HelloWorld extends HTMLElement {
   }
 }
 
+// ici on enregistre notre élément <hello-world> dans le navigateur
+// pour qu'il soit reconnu et utilisable dans le HTML
+// le nom de la balise est le premier paramètre
+// le deuxième paramètre est la classe qui définit le comportement de l'élément
 customElements.define("hello-world", HelloWorld);
 
 class HelloName extends HTMLElement {
