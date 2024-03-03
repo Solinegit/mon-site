@@ -9,7 +9,7 @@ le but est ici de comprendre comment fonctionne le flexbox en CSS, de manière t
 vous pouvez faire ce petit jeu en ligne pour apprendre les bases du flexbox:
 https://flexboxfroggy.com/ (rigolo et rapide mais pas très complet)
 
-Je vous donne aussi d'autres jeux en ligne pour apprendre le flexbox:
+Je vous donne aussi d'autres jeux en ligne pour apprendre le flexbox, mais pas obligé de les faire, c'est juste pour info:
 
 https://www.flexboxgame.com/  (super sauf qu'on voit pas le résultat en CSS, c'est un editeur WYSIWYG)
 
@@ -17,6 +17,11 @@ http://www.flexboxdefense.com/  (plus long que froggy)
 
 https://codingfantasy.com/games/flexboxadventure  (un peu long, il faut écrire à la main...)
 
+## tutoriel complet
+
+voici un tutoriel en anglais pour apprendre le flexbox, attention ce tutoriel est très complet, il est long, mais il est très bien fait, je vous le conseille si vous voulez vraiment comprendre le flexbox en profondeur (pas nécessaire pour le TP):
+
+https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/#introduction-to-flexbox-1
 
 ## flexbox playground
 
