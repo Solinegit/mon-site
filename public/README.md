@@ -87,6 +87,7 @@ Il est possible que vous ne voyiez pas les modifications apportées à ce site s
 - Rendu du TP 03: 6 mars à 23h59
 - Rendu du TP 04: 6 mars à 23h59
 - Rendu du TP 05 (Micro-Projet 2048): 11 mars à 23h59
+- Rendu du TP 06: 13 mars à 23h59
 - Rendu du TP 07: 13 mars à 23h59
 - Rendu du TP 08: 18 mars à 23h59
 - TH5 22 mars: **11**
