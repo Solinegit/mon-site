@@ -87,4 +87,4 @@ Pour rappel, vous pouvez accéder au code source de toutes les parties (à parti
 
 # Exercice 3
 
-Reprenez les exercices 2 et 3 mais cette fois-ci utilisez des classes (`Calculator` pour l'exercice 1 et `User` pour l'exercice 2). La fonction `calculateSumAsync` doit être une méthode de la classe `Calculator` et la fonction `verifyUser` doit être une méthode de la classe `User`.
+Reprenez les exercices 1 et 2 mais cette fois-ci utilisez des classes (`Calculator` pour l'exercice 1 et `User` pour l'exercice 2). La fonction `calculateSumAsync` doit être une méthode de la classe `Calculator` et la fonction `verifyUser` doit être une méthode de la classe `User`.
