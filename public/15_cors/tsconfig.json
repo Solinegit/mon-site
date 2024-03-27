@@ -2,7 +2,9 @@
   "compilerOptions": {
     "target": "es6",
     "outDir": "out",
-    "sourceMap": true
+    "sourceMap": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
   },
   "files": ["src/app.ts"]
 }
