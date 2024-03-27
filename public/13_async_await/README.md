@@ -8,7 +8,7 @@ Une promesse en JavaScript (et donc en TypeScript) est un objet qui représente 
 
 `async` et `await` sont des mots-clés en JavaScript (et donc en TypeScript) qui permettent de travailler avec des promesses de manière plus lisible et plus facile à comprendre. Une fonction marquée avec le mot-clé `async` retourne toujours une promesse. Le mot-clé `await` ne peut être utilisé que dans une fonction `async` et fait que l'exécution de la fonction est mise en pause jusqu'à ce que la promesse soit résolue ou rejetée.
 
-Dans le code ci-dessous, la fonction `fetchData` est une fonction asynchrone qui utilise la fonction `delay` préalablement définie au dessus. La fonction `delay` est une fonction qui prend un nombre de millisecondes comme argument et retourne une promesse qui se résout après ce nombre de millisecondes. Ceci permet de simuler une opération asynchrone (comme une requête réseau). Lorsque vous appelez `await delay(2000);` dans `fetchData`, l'exécution de `fetchData` est mise en pause pendant 2 secondes, après quoi elle reprend et retourne "Some data". Remarquez que `delay` utilise `setTimeout` (une fonction JavaScript déjà existante qui permet d'exécuter du code après un certain délai, exprimé en millisecondes) pour créer une promesse qui se résout après un certain délai. Cela est nécessaire car `setTimeout` ne retourne pas une promesse, mais `delay` retourne une promesse qui se résout après le délai spécifié. 
+Dans le code ci-dessous, la fonction `fetchData` est une fonction asynchrone qui utilise la fonction `delay` préalablement définie au dessus. La fonction `delay` est une fonction qui prend un nombre de millisecondes comme argument et retourne une promesse qui se résout après ce nombre de millisecondes. Ceci permet de simuler une opération asynchrone (comme une requête réseau). Lorsque vous appelez `await delay(2000);` dans `fetchData`, l'exécution de `fetchData` est mise en pause pendant 2 secondes, après quoi elle reprend et retourne "Some data". Remarquez que `delay` utilise `setTimeout` (une fonction JavaScript déjà existante qui permet d'exécuter du code après un certain délai, exprimé en millisecondes) pour créer une promesse qui se résout après un certain délai. Cela est nécessaire car `setTimeout` ne retourne pas une promesse, mais `delay` retourne une promesse qui se résout après le délai spécifié. Remarque aussi que `setTimeout` appelle `resolve` après le délai spécifié, ce qui résout la promesse.
 
 `resolve` et `reject` sont deux fonctions fournies par le constructeur de la Promesse en JavaScript. Elles sont utilisées pour indiquer le résultat d'une opération asynchrone.
 
@@ -49,7 +49,7 @@ Si vous voulez attendre que `retrieveData` soit terminé avant de continuer, vou
 await dataService.retrieveData();
 ```
 
-Cependant, notez que await ne peut être utilisé que dans une fonction asynchrone. Si vous n'êtes pas dans une fonction asynchrone, vous pouvez utiliser `then` pour attendre que la promesse soit résolue :
+Cependant, notez que await ne peut être utilisé que dans une fonction asynchrone ou un module ES6. Si vous n'êtes pas dans une fonction asynchrone, vous pouvez utiliser `then` pour attendre que la promesse soit résolue :
 
 ```typescript
 dataService.retrieveData().then(() => {
@@ -57,7 +57,24 @@ dataService.retrieveData().then(() => {
 });
 ```
 
-Ces deux approches vous permettent de contrôler quand et comment votre code réagit à la résolution de promesses asynchrones.
+Si vous voulez utiliser le module es6, ajoutez type="module" dans votre balise script :
+
+```html
+<script type="module" src="..."></script>
+```
+
+et ajoutez dans le tsconfig 
+    
+```json
+{
+    "compilerOptions": {
+        "module": "es6"
+    }
+}
+```
+
+
+Ces approches vous permettent de contrôler quand et comment votre code réagit à la résolution de promesses asynchrones.
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 
