@@ -1,10 +1,6 @@
 # 04_Debug
 
-:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/04_debug/edit/main/-/README.md)
-
-## cloner le dépôt
-
-dans VSCode, clonez le dépôt <https://gitlab.com/webdev101/04_debug.git>
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/ebdev101.gitlab.io/edit/main/-/public/04_debug/README.md)
 
 ## transpiler
 
