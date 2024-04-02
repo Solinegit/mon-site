@@ -1,6 +1,6 @@
 # 05 Html Css 2048
 
-:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/05_html_css_2048/edit/main/-/README.md)
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/05_html_css_2048/README.md)
 
 ## micro-projet jeu 2048
 

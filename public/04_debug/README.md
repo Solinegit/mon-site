@@ -1,6 +1,6 @@
 # 04_Debug
 
-:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/ebdev101.gitlab.io/edit/main/-/public/04_debug/README.md)
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/04_debug/README.md)
 
 ## transpiler
 
