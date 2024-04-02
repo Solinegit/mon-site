@@ -24,7 +24,7 @@ Puis de démarrer le serveur avec la commande suivante :
 npx json-server db.json
 ```
 
-Le serveur est alors démarré sur le port 3000. Vous pouvez accéder à la base de données en utilisant l'URL suivante : http://localhost:3000/api/ (par exemple http://localhost:3000/api/restaurants pour accéder à la liste des restaurants ou http://localhost:3000/api/categories pour accéder à la liste des catégories).
+Le serveur est alors démarré sur le port 3000. Vous pouvez accéder à la base de données en utilisant l'URL suivante : http://localhost:3000/ (par exemple http://localhost:3000/restaurants pour accéder à la liste des restaurants ou http://localhost:3000/categories pour accéder à la liste des catégories).
 
 Attention: quand le serveur reçoit des requêtes de type POST, PUT/PATCH ou DELETE, il modifie le fichier `db.json` en conséquence. Il est donc possible que les données soient modifiées ou supprimées. De plus, nous testons avec live server qui relance le programme à chaque modification de fichier, il est donc possible d'avoir une boucle infinie: le serveur modifie le fichier `db.json`, ce qui déclenche une relance du programme, qui envoie une requête au serveur, qui modifie le fichier `db.json`, qui relance le programme etc... Pour éviter cela, il est possible de spécifier des fichiers à ignorer dans les paramètres de live server avec `"liveServer.settings.ignoreFiles"`. Dans la liste des extensions, cliquez sur live server, clic droit > paramètres d'exécution, puis dans Live Server › Settings: Ignore Files ajoutez `"db.json"` à la liste.
 
