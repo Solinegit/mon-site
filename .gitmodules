@@ -1,6 +1,3 @@
-[submodule "public/03_tsconfig.json"]
-	path = public/03_tsconfig.json
-	url = https://gitlab.com/webdev101/03_tsconfig.json.git
 [submodule "public/04_debug"]
 	path = public/04_debug
 	url = https://gitlab.com/webdev101/04_debug.git

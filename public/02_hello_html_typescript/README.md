@@ -1,6 +1,6 @@
 # 02_hello_html_typescript
 
-:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/README.md)
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/02_hello_html_typescript/README.md)
 
 ## lire et comprendre
 
