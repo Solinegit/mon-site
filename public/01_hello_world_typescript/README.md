@@ -1,6 +1,6 @@
 # 01_hello_world_typescript
 
-:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/0webdev101.gitlab.io/edit/main/-/public/README.md)
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/0webdev101.gitlab.io/edit/main/-/public/01_hello_world_typescript/README.md)
 
 ## installer les prérequis
 
