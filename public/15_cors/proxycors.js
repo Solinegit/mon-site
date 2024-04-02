@@ -6,8 +6,13 @@ const app = express();
 app.use(cors());
 app.use(
   createProxyMiddleware({
-    router: (req) => new URL(req.path.substring(1)),
-    pathRewrite: (path, req) => new URL(req.path.substring(1)).pathname,
+    router: (req) => {
+      return new URL(req.path.substring(1))
+    },
+    pathRewrite: (path, req) => {
+    const newPath = path.split('/').slice(4).join('/');
+    return "/"+newPath;
+    },
     changeOrigin: true,
     logger: console,
   })
