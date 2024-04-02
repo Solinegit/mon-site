@@ -1,10 +1,6 @@
 # 03 tsconfig.json et les modules
 
-:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/03_tsconfig.json/edit/main/-/README.md)
-
-## cloner le dépôt
-
-dans VSCode, clonez le dépôt <https://gitlab.com/webdev101/03_tsconfig.json.git>
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/03_tsconfig.json/README.md)
 
 ## lire et comprendre
 
