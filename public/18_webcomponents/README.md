@@ -38,7 +38,7 @@ vous devez lire et comprendre le code source de `src/app.ts` que voici
 # Exercice
 
 1. Créez un nouvel élément HTML personnalisé appelé `<date-time>` qui affiche la date et l'heure actuelles.
-2. Créez un nouvel élément HTML personnalisé appelé `<greeting>` qui affiche un message de salutation personnalisé en fonction de l'heure de la journée (par exemple, "Bonjour" le matin, "Bon après-midi" l'après-midi, "Bonsoir" le soir).
+2. Créez un nouvel élément HTML personnalisé appelé `<greet-custom>` qui affiche un message de salutation personnalisé en fonction de l'heure de la journée (par exemple, "Bonjour" le matin, "Bon après-midi" l'après-midi, "Bonsoir" le soir).
 
 # ressources autres 
 
