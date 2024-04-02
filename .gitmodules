@@ -1,6 +1,3 @@
-[submodule "public/04_debug"]
-	path = public/04_debug
-	url = https://gitlab.com/webdev101/04_debug.git
 [submodule "public/05_html_css_2048"]
 	path = public/05_html_css_2048
 	url = https://gitlab.com/webdev101/05_html_css_2048.git
