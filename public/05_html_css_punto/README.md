@@ -11,3 +11,17 @@ Votre but dans ce micro-projet est de développer le jeu PUNTO avec des technolo
 
 Créez un dossier pour votre micro-projet, avec tous les fichiers et dossiers
 nécessaires: fichiers html, css, .tsconfig et dossier src avec fichier .ts
+
+## défis du micro-projet
+
+![PUNTO1](PUNTO1.jpeg)
+![PUNTO2](PUNTO2.jpeg)
+![PUNTO3](PUNTO3.jpeg)
+![PUNTO4](PUNTO4.jpeg)
+![PUNTO5](PUNTO5.jpeg)
+![PUNTO6](PUNTO6.jpeg)
+![PUNTO7](PUNTO7.jpeg)
+![PUNTO8](PUNTO8.jpeg)
+![PUNTO9](PUNTO9.jpeg)
+
+
