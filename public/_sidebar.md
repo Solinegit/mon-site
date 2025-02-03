@@ -5,7 +5,7 @@
 * [02 hello html typescript](02_hello_html_typescript/)
 * [03 tsconfig.json](03_tsconfig.json/)
 * [04 debug](04_debug/)
-* [05 html css 2048](05_html_css_2048/)
+* [05 html css punto](05_html_css_punto/)
 * [06 CSS flexbox](06_CSS_flexbox/)
 * [07 fat arrow](07_fat_arrow/)
 * [08 map reduce filter find foreach](08_map_reduce_filter_find_foreach/)

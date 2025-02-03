@@ -23,7 +23,7 @@ https://ecampus.paris-saclay.fr/course/view.php?id=118933
 
 Voici les modalités d'évaluation de cette unité d'enseignement:
 
-1. Micro-projet 2048 : Les étudiants réaliseront un micro-projet basé sur le jeu 2048. Ils devront soumettre leur code accompagné d'un enregistrement vidéo d'explication de moins de 2 minutes. Cette vidéo devra détailler les choix de conception et les fonctionnalités implémentées. Cette partie est évaluée sur 2 points.
+1. Micro-projet PUNTO : Les étudiants réaliseront un micro-projet basé sur le jeu PUNTO. Une évaluation par les pairs sera réalisée, basée sur la qualité du code rendu (1 point / 4), la fonctionnalité de l'application développée (1 point / 4), ainsi qu'une vidéo de démonstration de moins de 2 minutes (1 point / 4). La présentation entre pairs et le rendu sur la forge gitlab.telecom-paris.fr incluant l'intégralité du code source et de l'historique de modification après chaque séance de travail seront également pris en compte (1 point / 4). Cette partie est évaluée sur un total de 4 points.
    
 2. Exercices des travaux pratiques : Les étudiants réaliseront tous les exercices des travaux pratiques qui seront remis. Cette partie est évaluée sur 4 points.
 
