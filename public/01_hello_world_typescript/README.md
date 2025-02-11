@@ -7,25 +7,27 @@
 vous devez installer
 
 - l'IDE [VSCode](https://code.visualstudio.com/download)
-- le runtime JavaScript [Node](https://nodejs.org/en/download) qui vous fournira les commandes `node` et `npm` (node package manager)
-- le langage [typescript](https://www.typescriptlang.org/download) globalement sur votre ordinateur en utilisant (en mode superutilisateur) `npm install -g typescript` qui fournira la commande `tsc`
+- le runtime JavaScript [Bun](https://bun.sh/)
+- le backend Astro [Astro](https://astro.build/) que vous n'avez pas besoin d'installer, mais que vous initialiserez avec `bun create astro@latest` dans chaque répertoire (TP/projet)
+- l'extension Astro de VSCode [Astro Extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode) : directement dans VSCode, cliquez sur l'icône des extensions dans la barre latérale gauche, recherchez "Astro" et cliquez sur "Installer"
+- les extensions Github copilot et Gihub copilot chat dans VSCode. Vous pouvez les installer en cliquant sur l'icône des extensions dans la barre latérale gauche de VSCode, en recherchant "copilot" et en cliquant sur "Installer".
+- le gestionnaire de base de données PocketBase [PocketBase](https://pocketbase.io/) 
+- le langage [typescript](https://www.typescriptlang.org/download) globalement sur votre ordinateur en utilisant (en mode superutilisateur) `bun install -g typescript` qui fournira la commande `tsc` (typescript compiler)
 
-  > sur les machines de l'école, VSCode est installé, Node est installé mais pas typescript et vous n'avez pas le droit d'installer globalement typescript. Vous pouvez cependant l'installer localement avec `npm install typescript --save-dev` et utiliser la commande `npx tsc` (au lieu de `tsc`)
+  > sur les machines de l'école, VSCode est installé, mais pas typescript et vous n'avez pas le droit d'installer globalement typescript. Vous pouvez cependant l'installer localement avec `npm install typescript --save-dev` (attention, il s'agit bien de npm au lieu de bun) et utiliser la commande `npx tsc` (au lieu de `tsc`)
 
 ## vérifier l'installation
 
 ```terminal
-node --version
-|success|vXX.XX.XX
-npm --version
-|success|X.X.X
+bun --version
+|success|1.2.2
 tsc -v
-|success|X.X.X
+|success|5.5.4
 ```
 
 ## Prettier Formatter for Visual Studio Code
 
-Pour formater automatiquement votre code, vous devez installer l'extension Prettier Formatter for Visual Studio Code. Vous pouvez le faire en cliquant sur l'icône des extensions dans la barre latérale gauche, en recherchant "Prettier" et en cliquant sur "Installer". L'utilisation est assez simple, vous pouvez soit cliquer sur l'icône de la barre d'outils en bas "Prettier", soit utiliser le raccourci clavier `Alt` + `Shift` + `F` pour formater votre code.
+Pour formater automatiquement votre code, vous devez installer l'extension "Prettier Formatter for Visual Studio Code". Vous pouvez le faire en cliquant sur l'icône des extensions dans la barre latérale gauche de VSCode, en recherchant "Prettier" et en cliquant sur "Installer". L'utilisation est assez simple, vous pouvez soit cliquer sur l'icône de la barre d'outils en bas "Prettier", soit utiliser le raccourci clavier `Alt` + `Shift` + `F` pour formater votre code.
 
 ## IA d'aide au codage
 
@@ -52,7 +54,15 @@ tsc hello.ts
 le fichier `hello.js` est créé, vous pouvez l'exécuter sans navigateur avec node
 
 ```terminal
-node hello.js
+bun hello.js
+```
+
+en comparant les fichiers `hello.ts` et `hello.js`, vous pouvez comprendre l'étape de transpilation (la transpilation, contrairement à la compilation, est une transformation de code source en code source et non en code binaire)
+
+bun est aussi capable de transpiler et exécuter en une seule commande, dans ce cas vous pouvez directement exécuter le fichier `hello.ts` avec:
+
+```terminal
+bun hello.ts
 ```
 
 ## comprendre l'utilité du typage dans typescript

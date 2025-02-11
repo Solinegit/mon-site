@@ -4,41 +4,18 @@
 
 ## lire et comprendre
 
-vous devez lire et comprendre le code source des fichiers `index.html`  `tsconfig.json` `src/app.ts` et `src/moduleMath.ts` que voici
+vous devez lire et comprendre le code source des fichiers `pages/index.astro`  `src/scripts/app.ts` et `src/scripts/moduleMath.ts` en particulier les directives export et import qui permettent de gérer les modules en TypeScript.
+Ici, nous avons le fichier `moduleMath.ts` qui exporte des variables et des fonctions et le fichier `app.ts` qui importe ces fonctions/variables pour les utiliser.
 
-[index.html](index.html ":include :type=code html")
+[pages/index.astro](index.html ":include :type=code html")
 
-[tsconfig.json](tsconfig.json ":include :type=code json")
+[src/scripts/app.ts](src/scripts/app.ts ":include :type=code typescript")
 
-[src/app.ts](src/app.ts ":include :type=code typescript")
+[src/scripts/moduleMath.ts](src/scripts/moduleMath.ts ":include :type=code typescript")
 
-[src/moduleMath.ts](src/moduleMath.ts ":include :type=code typescript")
+## démarrage du projet avec Astro
 
-## transpiler
-
-transpilez dans un terminal avec
-
-```terminal
-tsc -w
-```
-
-le dossier `out` est créé et les fichiers `out/app.js` `out/app.js.map` `out/moduleMath.js` `out/moduleMath.js.map` sont créés. Les fichiers .map permettent de faire le lien entre le code source et le code transpilé pour pouvoir débugger le code source dans le navigateur.
-
-remarquez que le script transpilé `out/app.js` est lié au fichier `index.html` avec un `type="module"` dans la balise script ce qui autorise le chargement des modules ES6 avec la directive `import` dans le code source.
-
-```html
-<script type="module" src="out/app.js"></script>
-```
-
-pour transpiler automatiquement à chaque changement du fichier .ts vous pouvez utiliser le "watch mode" avec
-
-```terminal
-tsc -w
-```
-
-# Execution dans le navigateur
-
-Utilisez le live server de VSCode pour ouvrir le fichier `index.html` dans le navigateur. Cette fois, comme le fichier `index.html` est à la racine du projet il s'affiche directement dans le navigateur.
+configurez un nouveau projet ASTRO puis démarrez le serveur.
 
 # lectures
 
@@ -58,4 +35,3 @@ lisez sur le site pédagogique la partie théorique
 2. Dans les deux modules `moduleVacances.ts` et `moduleTravail.ts` créez la fonction `calculerJoursRestants` avec le même nom dans les deux modules, qui prend en paramètre le nombre de jours de vacances ou de travail déjà pris et retourne le nombre de jours restants. Vous pouvez inventer les règles pour le calcul des jours de vacances et de travail restants. Exportez la fonction qui a le même nom avec `export` dans les deux modules.
 3. Dans le fichier `calculJours.ts` importez les deux modules et utilisez la fonction `calculerJoursRestants` pour afficher le nombre de jours de vacances et de travail restants pour un employé. Vous devez résoudre le conflit de nom entre les deux modules (voir la partie "gestion des conflits de nommage" dans la lecture ci-dessus).
 4. Affichez les résultats dans des balises `div` avec `createElement` et `appendChild`.
-5. Dans le fichier `tsconfig.json` vous pouvez ajouter tous les fichiers .ts en remplaçant la ligne `"files": [...]` par `"include": ["src/**/*.ts"]` pour inclure tous les fichiers .ts dans le dossier `src` et ses sous-dossiers.

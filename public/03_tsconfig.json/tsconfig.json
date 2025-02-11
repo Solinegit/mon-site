@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "target": "es6",
-    "module": "es6",
-    "outDir": "out",
-    "sourceMap": true
-  },
-  "files": ["src/app.ts", "src/moduleMath.ts"]
-}
