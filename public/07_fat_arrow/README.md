@@ -18,13 +18,40 @@ Vous devez lire et comprendre le code source de `app.ts` que voici
 
 [src/app.ts](src/app.ts ":include :type=code typescript")
 
-Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
+Pour aller plus vite dans cet exercice, ous pouvez exécuter le code TypeScript avec la commande suivante
+
+```bash
+bun app.ts
+```
+
+Attention, dans ce cas il n'y a pas de serveur Astro qui démarre et pas de navigateur qui s'ouvre. C'est juste pour tester le code TypeScript avec BUN. A partir du moment où un objet `document` est utilisé, il faut exécuter le code dans un navigateur (voir exercice 1 plus bas).
 
 # lecture
 
 19 Fonctions.pdf  partie  4. This et les fonctions fléchées   (la partie explicative de this sera comprise plus tard)
 
-# Exercice 1 : Calculatrice simple
+# Exercice 1 :
+
+Faites un projet Astro et faites en sorte que le fichier `app.ts` soit exécuté dans le navigateur (côté client). Cela permet d'accéder à l'objet `document` qui représente la page web affichée dans le navigateur.
+
+Ajoutez un addEventListener sur le document pour afficher les coordonnées du clic de la souris.
+
+```typescript
+document.addEventListener("click", (event: MouseEvent) => {
+  console.log(`x: ${event.clientX}, y: ${event.clientY}`);
+});
+
+//ici la fonction fléchée reçoit un paramètre de type MouseEvent
+//qui sera passé automatiquement par le navigateur lors du clic
+//En fait, la fonction fléchée est un callback qui sera appelé par le navigateur
+//à chaque clic sur la page. C'est pour cela qu'on dit qu'on "ajoute" un écouteur
+//d'événement sur le document. On dit aussi qu'on "écoute" l'événement "click" sur le document.
+//On dit aussi qu'on "souscrit" à l'événement "click" sur le document.
+```
+
+Testez et vérifiez qu'à chaque clic de la souris, les coordonnées du clic sont affichées dans la console du navigateur.
+
+# Exercice 2 : Calculatrice simple
 
 Faites une application de calculatrice.
 
@@ -46,7 +73,7 @@ calculatrice(5, 3, "additionner");
 
 doit afficher "La somme est: 8".
 
-# Exercice 2 : affichage des coordonnées de la souris toutes les secondes
+# Exercice 3 : affichage des coordonnées de la souris toutes les secondes
 
 Faites une application qui affiche les coordonnées de la souris toutes les secondes.
 Vous pouvez vous aider de la documentation de l'objet `MouseEvent` : 

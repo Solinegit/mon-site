@@ -7,10 +7,9 @@
 Un site important de ressource est celui de MDN (Mozilla Developer Network) :
 https://developer.mozilla.org/fr/
 
-Votre but dans ce micro-projet est de développer le jeu PUNTO avec des technologies web : HTML/CSS/Typescript.
+Votre but dans ce micro-projet est de développer le jeu PUNTO avec des technologies web : HTML/CSS/Typescript et un serveur Astro. Cela vous permettra de vous familiariser avec ces technologies.
 
-Créez un dossier pour votre micro-projet, avec tous les fichiers et dossiers
-nécessaires: fichiers html, css, .tsconfig et dossier src avec fichier .ts
+Faites en sorte que l'intégralité du code soit exécuté dans le navigateur (côté client) et non pas sur le serveur.
 
 ## défis du micro-projet
 

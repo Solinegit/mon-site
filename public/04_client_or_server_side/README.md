@@ -6,15 +6,14 @@
 
 configurez un nouveau projet ASTRO avec les différents fichiers fournis puis démarrez le serveur.
 
-## calcul côté client ou côté serveur ? 
+# exercice : calcul côté client ou côté serveur ? 
 
 Ajoutez des console.log("message") juste avant les return (en changeant "message" par ce que vous voulez) dans les fonctions getCurrentHumidity getCurrentWind getCurrentTemperature et getCurrentCloudCover.
 
-Où s'affichent les 4 messages ? Pourquoi ?
+Où s'affichent les 4 messages ? Dans le terminal du serveur Astro ou dans la console du navigateur ? Pourquoi ?
 
 Ouvrez l'onglet "Network" de la console de développement de votre navigateur. Rechargez la page. Observez que DEUX requêtes de type FETCH sont envoyées au serveur api.open-meteo.com.
 
 ![network](network.png)
 
-# exercice 
-
+Répondez aux question dans un fichier reponses.md à la racine de votre projet.

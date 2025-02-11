@@ -67,16 +67,3 @@ afficher(5, 3, (a: number, b: number) => {
 });
 // Affiche "Le résultat est: 33333"
 
-//sixième exemple avec addeventlistener sur la page html (document):
-//quand on clique sur la page, on affiche les coordonnées du clic
-
-document.addEventListener("click", (event: MouseEvent) => {
-  console.log(`x: ${event.clientX}, y: ${event.clientY}`);
-});
-
-//ici la fonction fléchée reçoit un paramètre de type MouseEvent
-//qui sera passé automatiquement par le navigateur lors du clic
-//En fait, la fonction fléchée est un callback qui sera appelé par le navigateur
-//à chaque clic sur la page. C'est pour cela qu'on dit qu'on "ajoute" un écouteur
-//d'événement sur le document. On dit aussi qu'on "écoute" l'événement "click" sur le document.
-//On dit aussi qu'on "souscrit" à l'événement "click" sur le document.
