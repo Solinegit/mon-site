@@ -16,7 +16,7 @@ Nous donnons aussi d'autres exemples: fonction fléchée qui ne prend pas de par
 
 Vous devez lire et comprendre le code source de `app.ts` que voici
 
-[src/app.ts](src/app.ts ":include :type=code typescript")
+[app.ts](app.ts ":include :type=code typescript")
 
 Pour aller plus vite dans cet exercice, ous pouvez exécuter le code TypeScript avec la commande suivante
 
