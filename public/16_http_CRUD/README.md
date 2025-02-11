@@ -78,7 +78,17 @@ this.options = {
     };
 ```
 
-Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
+D'ailleurs, vous serez vite confrontés à l'authentification auprès des serveurs, pour cela il est possible de spécifier le header `Authorization` avec des valeurs souvent au format `Bearer <token>` ou bien parfois seulement `<token>`.
+ C'est une pratique courante en HTTP, vous pouvez le voir dans le code suivant :
+
+```typescript
+this.options = {
+      headers: {
+        "Authorization":"Bearer <token>"  //ou bien "Authorization":"<token>"
+      },
+    };
+```
+
 
 # Lecture
 

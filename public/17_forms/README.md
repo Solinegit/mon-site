@@ -24,7 +24,7 @@ D'autres types d'éléments d'entrée que vous pourriez utiliser dans un formula
 `<textarea>` : Un champ d'entrée pour du texte multiligne.
 `<select>` : Une liste déroulante qui permet à l'utilisateur de choisir une option parmi plusieurs.
 
-[index.html](index.html ":include :type=code html")
+[src/pages/index.astro](src/pages/index.astro ":include :type=code html")
 
 `MyFormManager` est une classe TypeScript qui gère un formulaire HTML. Voici ce que fait chaque partie du code :
 
@@ -36,7 +36,7 @@ Un gestionnaire d'événements est ajouté au formulaire pour l'événement subm
 
 La méthode `handleSubmit` est appelée lorsque l'utilisateur soumet le formulaire. Elle empêche le comportement par défaut de l'événement de soumission (qui est de recharger la page), puis elle récupère la valeur du champ d'entrée du nom. Si le nom a moins de 4 caractères, un message d'erreur est affiché. Sinon, un message de succès est affiché, indiquant si l'utilisateur est un étudiant ou non.
 
-[src/app.ts](src/app.ts ":include :type=code typescript")
+[src/scripts/app.ts](src/scripts/app.ts ":include :type=code typescript")
 
 vous pouvez approfondir sur la page https://developer.mozilla.org/fr/docs/Learn/Forms 
 

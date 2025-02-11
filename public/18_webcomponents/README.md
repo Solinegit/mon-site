@@ -33,7 +33,7 @@ C'est un exemple de comment vous pouvez créer et utiliser des éléments HTML p
 
 vous devez lire et comprendre le code source de `src/app.ts` que voici
 
-[src/app.ts](src/app.ts ":include :type=code typescript")
+[src/scripts/app.ts](src/scripts/app.ts ":include :type=code typescript")
 
 # Exercice
 
