@@ -75,8 +75,6 @@ lisez sur le site pédagogique les parties théoriques
 
 04 Pourquoi TypeScript .pdf
 
-# exercices
-
-## le typage dans typescript
+# exercice : le typage dans typescript
 
 comparez le fichier `hello.js` et `hello.ts` et déduisez l'étape de transpilation. A quoi sert le typage fort dans typescript qui n'existe pas dans javascript ? Répondez dans un fichier texte au format markdown.
