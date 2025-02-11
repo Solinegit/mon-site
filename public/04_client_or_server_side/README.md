@@ -6,7 +6,9 @@
 
 configurez un nouveau projet ASTRO avec les différents fichiers fournis puis démarrez le serveur.
 
-# exercice : calcul côté client ou côté serveur ? 
+# exercice : calcul côté client ou côté serveur ?
+
+Regardez bien tous les fichiers source fournis dans le projet Astro. index.astro et moduleWeatherServerSide.ts sont dans le dossier src/pages et app.ts ainsi que moduleWeatherClientSide.ts sont dans le dossier src/scripts.
 
 Ajoutez des console.log("message") juste avant les return (en changeant "message" par ce que vous voulez) dans les fonctions getCurrentHumidity getCurrentWind getCurrentTemperature et getCurrentCloudCover.
 
