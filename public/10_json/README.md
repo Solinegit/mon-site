@@ -54,21 +54,12 @@ let user: User = JSON.parse(jsonString, (key, value) => {
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 
-[src/app.ts](src/app.ts ":include :type=code typescript")
+[app.ts](app.ts ":include :type=code typescript")
 
 ainsi que le code source de `deezerOffline.ts` que voici
 
-[src/deezerOffline.ts](src/deezerOffline.ts ":include :type=code typescript")
+[deezerOffline.ts](deezerOffline.ts ":include :type=code typescript")
 
-Remarquez quand dans tscconfig.json, nous avons ajouté src/deezerOffline.ts dans la liste des fichiers à transpiler:
-
-[tsconfig.json](tsconfig.json ":include :type=code json")
-
-Remarquez aussi que dans le fichier `index.html`, nous avons ajouté un lien vers le fichier `deezerOffline.js`:
-
-[index.html](index.html ":include :type=code html")
-
-Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
 # lecture
 

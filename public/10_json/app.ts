@@ -28,7 +28,12 @@ interface UserInterface {
 
 let users: UserInterface[] = JSON.parse(data);
 
-console.log(users[0].scores[0]);
+users.forEach((u) => {
+  console.log(`id: ${u.id}, name: ${u.name}, age: ${u.age}`);
+  u.scores.forEach((s) => {
+    console.log(`    score[${u.scores.indexOf(s)}]: ${s}`);
+  });
+});
 
 //sérialisation d'objets (instanciés depuis une classe qui implémente une interface) vers JSON
 

@@ -4,6 +4,8 @@
 
 Ce code interagit avec l'API de Deezer pour récupérer et afficher une liste de genres musicaux.
 
+## Explication du code
+
 Voici ce que fait chaque partie du code :
 
 La fonction `getGenresFromDeezer` fait une requête à l'API de Deezer pour obtenir une liste de genres musicaux. Elle utilise `fetch` pour faire la requête, puis `await` pour attendre que la promesse renvoyée par `fetch` soit résolue. Ensuite, elle convertit la réponse en JSON et renvoie les données de genre.
@@ -14,30 +16,21 @@ Ensuite, le même processus est répété, mais cette fois en utilisant une clas
 
 Enfin, une instance de `DeezerService` est créée et la méthode `displayGenres` est appelée pour afficher les genres.
 
-Notez que ce code suppose que vous avez un serveur proxy en cours d'exécution sur `localhost:8088` pour contourner les restrictions de la politique de même origine (CORS) imposées par l'API de Deezer.
+## restrictions de la politique de même origine (CORS) lors de l'exécution côté client
+
+Nous allons montrer que le navigateur bloque les requêtes à cause des restrictions de la politique de même origine (CORS) imposées par l'API de Deezer.
 
 CORS signifie Cross-Origin Resource Sharing (Partage de ressources entre origines). C'est un mécanisme qui permet à de nombreux ressources (par exemple, les polices, les images, les scripts) sur une page web d'être demandées à un autre domaine que celui du site d'origine.
 
-Par défaut, la politique de même origine (Same-Origin Policy) dans les navigateurs web empêche les requêtes d'accéder à des ressources de différents domaines. Cette politique est une mesure de sécurité importante pour empêcher les attaques de type "Cross-Site Request Forgery" (CSRF).
+Par défaut, la politique de même origine (Same-Origin Policy) dans les navigateurs web empêche les requêtes d'accéder à des ressources de différents domaines. Cette politique est une mesure de sécurité importante pour empêcher les attaques de type "Cross-Site Request Forgery" (CSRF) - vous pouvez en savoir plus sur Wikipedia par exemple.
 
 Cependant, CORS permet aux serveurs de spécifier qui (c'est-à-dire, quels domaines) peut accéder à leurs ressources. Cela se fait en ajoutant des en-têtes HTTP spécifiques qui indiquent quels domaines sont autorisés à accéder aux ressources.
 
-Dans notre exemple, vous devez avoir un serveur proxy en cours d'exécution sur `localhost:8088` pour contourner les restrictions CORS imposées par l'API de Deezer. Cela signifie que l'API de Deezer n'autorise pas les requêtes CORS directes depuis votre domaine (ici votre domaine est localhost, car vous exécutez le code en local), et votre navigateur empêchera ces requêtes. C'est pour contourner la restriction de votre navigateur que nous utilisons un serveur proxy.
+Dans notre cas, l'API de Deezer n'autorise pas les requêtes CORS directes depuis votre domaine (ici votre domaine est localhost, car vous exécutez le code en local), et votre navigateur empêchera ces requêtes. 
 
-Pour pouvoir tester cette application, vous devez d'abord démarrer le proxy CORS, en exécutant la commande suivante :
+Faites deux tests: une exécution côté client en montrant que les requêtes sont bloquées par le navigateur et une exécution côté serveur (code qui s'exécute sur le serveur ASTRO) pour contourner ce problème.
 
-```terminal
-npm install
-node proxycors.js
-```
-
-Cette commande utilise npm, le gestionnaire de paquets de Node.js, configuré avec package.json. Dans la configuration de package.json, nous utilisons le package cors.js qui sera téléchargé et installé automatiquement. Nous utilisons ce package dans le fichier `proxycors.js`. Attention ce fichier est en javascript et non en typescript. Vous n'êtes pas obligé de comprendre son code.
-
-Vous devez lire et comprendre le code source de `app.ts` que voici ainsi que vérifier son fonctionnement en démarrant le proxy cors, en transpilant avec `tsc` et en exécutant `index.html` dans votre navigateur.
-
-[src/app.ts](src/app.ts ":include :type=code typescript")
-
-Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
+[app.ts](app.ts ":include :type=code typescript")
 
 # lecture
 
@@ -45,7 +38,7 @@ pas de lecture particulière si ce n'est https://fr.wikipedia.org/wiki/Cross-ori
 
 # exercice
 
-Faites une application qui affiche une liste des titres de la playlist "top 100 France 2023" 
+Faites une application qui s'exécute côté SERVEUR (pour ne pas être bloqué par CORS) et qui affiche une liste des titres de la playlist "top 100 France 2023" 
 https://api.deezer.com/playlist/11846226041
 
 L'affichage doit être fait sous forme de liste non ordonnée (ul) et chaque titre doit être un élément de liste (li). Chaque élément de liste doit être numéroté (en utilisant l'index de la liste, pas son "id" - pour cela un `forEach` avec un deuxième paramètre `index` vous sera utile), contenir le titre de la chanson (sans lien, que le texte) et le nom de l'artiste (sans lien, que le texte), le titre de l'album (sans lien que le texte) et la petite photo de l'album (cover_small) en utilisant une balise img. Il doit être suivi d'un petit lecteur audio pour écouter un extrait de la chanson en mp3 (ce lien est disponible dans la propriété `preview: string` de l'interface `Datum`). Ce lecteur audio est une balise audio avec un attribut src qui pointe vers le lien de l'extrait de la chanson. Il doit également avoir un attribut `controls` pour afficher les contrôles de lecture audio. Pour ne pas précharger les fichiers audio, vous devez ajouter l'attribut `preload="none"` à la balise audio sinon tous les extraits de chansons seront téléchargés en même temps au démarrage de la page! voici un exemple HTML pour chaque élément de liste:

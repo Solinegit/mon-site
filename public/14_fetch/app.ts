@@ -10,7 +10,6 @@ interface Earthquake {
 }
 
 class EarthquakeService {
-  //fetch the latest earthquake data from the USGS API
   private async getEarthquakesFromUSGS(): Promise<Earthquake[]> {
     const response = await fetch(
       "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=yesterday&endtime=today&minmagnitude=4"
@@ -19,19 +18,12 @@ class EarthquakeService {
     return earthquakejson.features;
   }
 
-  //for each earthquake, log
-  // - the time and date with the format "YYYY-MM-DD HH:MM (Paris time)"
-  // - the magnitude of the earthquake
-  // - the place of the earthquake
-  // and display it on the page as well as in the console
   async displayEarthquakes() {
     try {
       // Await the promise to resolve
       const earthquakes = await this.getEarthquakesFromUSGS();
-      const ul: HTMLUListElement = document.createElement("ul");
       earthquakes.forEach((earthquake) => {
         // Use forEach on the resolved earthquakes array
-        const li: HTMLLIElement = document.createElement("li");
         const date: Date = new Date(earthquake.properties.time);
         const options: Intl.DateTimeFormatOptions = {
           year: "numeric",
@@ -43,11 +35,8 @@ class EarthquakeService {
         };
         const dateString: string = date.toLocaleDateString("fr-FR", options);
         const finalString: string = `${dateString} - ${earthquake.properties.mag} - ${earthquake.properties.place}`;
-        li.textContent = finalString;
-        ul.appendChild(li);
         console.log(finalString);
       });
-      document.body.appendChild(ul);
     } catch (error) {
       console.error('Une erreur est survenue lors de la récupération des données de tremblement de terre :', error);
     }

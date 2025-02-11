@@ -16,7 +16,7 @@ Dans l'exemple ci-dessous, si la fonction `convertirEnNombre` lance une exceptio
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 
-[src/app.ts](src/app.ts ":include :type=code typescript")
+[app.ts](app.ts ":include :type=code typescript")
 
 Pour rappel, vous pouvez accéder au code source de toutes les parties (à partir de 06) sur le dépôt suivant : https://gitlab.com/webdev101/webdev101.gitlab.io/-/tree/main/public/
 
