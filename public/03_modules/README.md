@@ -1,6 +1,6 @@
 # 03 tsconfig.json et les modules
 
-:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/03_tsconfig.json/README.md)
+:memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/03_modules/README.md)
 
 ## lire et comprendre
 
