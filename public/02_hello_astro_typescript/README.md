@@ -1,4 +1,4 @@
-# 02_hello_html_typescript
+# 02_hello_astro_typescript
 
 :memo: [éditer cette page](https://gitlab.com/-/ide/project/webdev101/webdev101.gitlab.io/edit/main/-/public/02_hello_html_typescript/README.md)
 
@@ -39,8 +39,8 @@ Vérifiez que vous voyez `Hello, hello TYPESCRIPT World!` dans la page web.
 
 Vous devez d'abord démarrer un serveur local, pour cela nous allons utiliser Astro.
 Une bonne pratique avec VSCode est d'ouvrir chaque dossier de TP ou de projet dans une nouvelle fenêtre de VSCode. Cela permet de garder les configurations de débogage séparées et de ne pas mélanger les fichiers de différents TP ou projets.
-Pour cela, ouvrez d'abord un nouvelle fenêtre VSCode (Fichier > Nouvelle fenêtre) et ouvrez le dossier 02_hello_html_typescript dans cette nouvelle fenêtre. (fichier > ouvrir un dossier, ouvrez le dossier 02_hello_html_typescript).
-Dans le dossier 02_hello_html_typescript, exécutez la commande
+Pour cela, ouvrez d'abord un nouvelle fenêtre VSCode (Fichier > Nouvelle fenêtre) et ouvrez le dossier 02_hello_astro_typescript dans cette nouvelle fenêtre. (fichier > ouvrir un dossier, ouvrez le dossier 02_hello_astro_typescript).
+Dans le dossier 02_hello_astro_typescript, exécutez la commande
 
 ```terminal
 bun create astro@latest
@@ -60,6 +60,16 @@ Dans le terminal, exécutez la commande
 ```terminal
 bun dev
 ```
+
+Le serveur astro est lancé et vous verrez dans le terminal:
+    
+```terminal
+ astro  v5.2.5 ready in 155 ms
+
+┃ Local    http://localhost:4321/
+```
+
+Vous pouvez alors vous connecter à l'adresse http://localhost:4321/ dans votre navigateur pour voir votre application Astro en cours d'exécution.
 
 Vous devriez voir "Astro Homepage : To get started, open the src/pages directory in your project."
 
@@ -128,15 +138,7 @@ L'initialisation de Astro va créer une configuration de débogage Astro dans le
 ```
 
 
-Dans le menu à gauche de VSCode, cliquez sur l'icône de débogage - une icône en forme de flèche avec un insecte dessus (ou appuyez sur F5). Choisissez la configuration "Development server", puis cliquez sur la flèche verte ou appuyez sur F5 pour démarrer l'exécution, le serveur astro est lancé et vous verrez dans le terminal:
-    
-```terminal
- astro  v5.2.5 ready in 155 ms
-
-┃ Local    http://localhost:4321/
-```
-
-Vous pouvez alors vous connecter à l'adresse http://localhost:4321/ dans votre navigateur pour voir votre application Astro en cours d'exécution.
+Dans le menu à gauche de VSCode, cliquez sur l'icône de débogage - une icône en forme de flèche avec un insecte dessus (ou appuyez sur F5). Choisissez la configuration "Development server", puis cliquez sur la flèche verte ou appuyez sur F5 pour démarrer l'exécution. 
 
 Dans VSCode cliquer sur le carré rouge pour arrêter le serveur astro, ou la flèche ronde verte pour redémarrer le programme du début
 
