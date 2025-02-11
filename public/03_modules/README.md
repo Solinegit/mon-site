@@ -15,7 +15,7 @@ Ici, nous avons le fichier `moduleMath.ts` qui exporte des variables et des fonc
 
 ## démarrage du projet avec Astro
 
-configurez un nouveau projet ASTRO puis démarrez le serveur.
+configurez un nouveau projet ASTRO avec les différents fichiers fournis puis démarrez le serveur.
 
 # lectures
 
