@@ -7,7 +7,7 @@
 vous devez lire et comprendre le code source des fichiers `pages/index.astro`  `src/scripts/app.ts` et `src/scripts/moduleMath.ts` en particulier les directives export et import qui permettent de gérer les modules en TypeScript.
 Ici, nous avons le fichier `moduleMath.ts` qui exporte des variables et des fonctions et le fichier `app.ts` qui importe ces fonctions/variables pour les utiliser.
 
-[pages/index.astro](index.html ":include :type=code html")
+[pages/index.astro](src/pages/index.astro ":include :type=code html")
 
 [src/scripts/app.ts](src/scripts/app.ts ":include :type=code typescript")
 
