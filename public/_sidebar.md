@@ -4,7 +4,7 @@
 * [01 hello world typescript](01_hello_world_typescript/)
 * [02 hello astro typescript](02_hello_astro_typescript/)
 * [03 modules](03_modules/)
-* [04 debug](04_debug/)
+* [04 client or server side](04_client_or_server_side/)
 * [05 html css punto](05_html_css_punto/)
 * [06 CSS flexbox](06_CSS_flexbox/)
 * [07 fat arrow](07_fat_arrow/)

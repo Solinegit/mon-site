@@ -29,10 +29,6 @@ tsc -v
 
 Pour formater automatiquement votre code, vous devez installer l'extension "Prettier Formatter for Visual Studio Code". Vous pouvez le faire en cliquant sur l'icône des extensions dans la barre latérale gauche de VSCode, en recherchant "Prettier" et en cliquant sur "Installer". L'utilisation est assez simple, vous pouvez soit cliquer sur l'icône de la barre d'outils en bas "Prettier", soit utiliser le raccourci clavier `Alt` + `Shift` + `F` pour formater votre code.
 
-## IA d'aide au codage
-
-Pour activer l'IA d'aide au codage, vous devez installer l'extension github copilot dans Visual Studio Code.
-
 ## cloner le dépôt
 
 dans VSCode, clonez le dépôt <https://gitlab.com/webdev101/webdev101.gitlab.io.git> puis allez dans le dossier `public/01_hello_world_typescript`
