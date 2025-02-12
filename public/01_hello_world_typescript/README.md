@@ -8,6 +8,7 @@ vous devez installer
 
 - l'IDE [VSCode](https://code.visualstudio.com/download)
 - le runtime JavaScript [Bun](https://bun.sh/)
+- le runtime NodeJs [NodeJs](https://nodejs.org/en/download/)
 - le backend Astro [Astro](https://astro.build/) que vous n'avez pas besoin d'installer, mais que vous initialiserez avec `bun create astro@latest` dans chaque répertoire (TP/projet). Pour le moment vous n'avez pas besoin de créer un projet Astro pour ce premier TP mais à partir du second TP. 
 - l'extension Astro de VSCode [Astro Extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode) : directement dans VSCode, cliquez sur l'icône des extensions dans la barre latérale gauche, recherchez "Astro" et cliquez sur "Installer"
 - les extensions Github copilot et Gihub copilot chat dans VSCode. Vous pouvez les installer en cliquant sur l'icône des extensions dans la barre latérale gauche de VSCode, en recherchant "copilot" et en cliquant sur "Installer".
