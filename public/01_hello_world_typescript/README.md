@@ -49,7 +49,7 @@ transpilez dans un terminal avec
 tsc hello.ts
 ```
 
-le fichier `hello.js` est créé, vous pouvez l'exécuter sans navigateur avec node
+le fichier `hello.js` est créé, vous pouvez l'exécuter sans navigateur avec bun
 
 ```terminal
 bun hello.js
