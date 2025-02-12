@@ -67,7 +67,7 @@ bun hello.ts
 
 lisez https://www.typescriptlang.org/fr/docs/handbook/typescript-from-scratch.html pour comprendre pourquoi le typage permet de gagner du temps
 
-lisez sur le site pédagogique les parties théoriques
+lisez sur le site pédagogique (ecampus) les parties théoriques sont disponibles sur des PDF à votre dispositions, lisez ceux-ci:
 
 07 Environnement de developpement.pdf
 
