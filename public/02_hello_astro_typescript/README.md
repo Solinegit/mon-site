@@ -138,6 +138,7 @@ L'initialisation de Astro va créer une configuration de débogage Astro dans le
 }
 ```
 
+ATTENTION: le dossier .vscode doit être à la RACINE du dossier ouvert par VSCode. C'est à dire qu'il faut faire Fichier > Ouvrir un dossier et choisir celui que vous avez créé pour votre projet ASTRO où le dossier .vscode a été créé.
 
 Dans le menu à gauche de VSCode, cliquez sur l'icône de débogage - une icône en forme de flèche avec un insecte dessus (ou appuyez sur F5). Choisissez la configuration "Development server", puis cliquez sur la flèche verte ou appuyez sur F5 pour démarrer l'exécution. 
 
