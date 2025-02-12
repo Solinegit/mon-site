@@ -47,8 +47,9 @@ bun create astro@latest
 ATTENTION: pour certains processeurs (ARM) en cas d'erreur, essayez avec npm au lieu de bun
 ```
 
-Créez un dossier vide pour le projet Astro, vous mettrez les fichiers fournis dans ce dossier.
-Puis répondez aux questions dans le terminal pour créer un projet Astro dans le dossier courant (la première question "Where should we create your new project?" doit être répondue par `02_votre_nom` pour créer un nouveau dossier dans lequel sera créé la structure d'un projet ASTRO). Pour les questions suivantes:
+Répondez aux questions dans le terminal pour créer un projet Astro dans le dossier courant.
+La première question "Where should we create your new project?" doit être répondue par `02_votre_nom` pour créer un nouveau dossier dans lequel sera créé la structure d'un projet ASTRO.
+Pour les questions suivantes:
 ```terminal
 How would you like to start your new project? A basic, minimal starter
 Install dependencies? Yes
