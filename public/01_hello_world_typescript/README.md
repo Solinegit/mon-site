@@ -7,6 +7,7 @@
 vous devez installer
 
 - l'IDE [VSCode](https://code.visualstudio.com/download)
+- git [Git](https://git-scm.com/downloads)
 - le runtime JavaScript [Bun](https://bun.sh/)
 - le runtime NodeJs [NodeJs](https://nodejs.org/en/download/)
 - le backend Astro [Astro](https://astro.build/) que vous n'avez pas besoin d'installer, mais que vous initialiserez avec `bun create astro@latest` dans chaque répertoire (TP/projet). Pour le moment vous n'avez pas besoin de créer un projet Astro pour ce premier TP mais à partir du second TP. 
