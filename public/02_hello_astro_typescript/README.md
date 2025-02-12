@@ -46,6 +46,7 @@ Dans le dossier 02_hello_astro_typescript, exécutez la commande
 bun create astro@latest
 ```
 
+Créez un dossier vide pour le projet Astro, vous mettrez les fichiers fournis dans ce dossier.
 Puis répondez aux questions dans le terminal pour créer un projet Astro dans le dossier courant (la première question "Where should we create your new project?" doit être répondue par `.` pour indiquer le dossier courant). Pour les questions suivantes:
 ```terminal
 How would you like to start your new project? A basic, minimal starter
