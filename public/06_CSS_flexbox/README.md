@@ -54,7 +54,7 @@ https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Flexbox_skills#dispos
 
 ## autres exercices (non obligatoires)
 
-https://lab-sticc.univ-brest.fr/~leparc/Etud/Licence/IntroInfo/WebPascal/TP9_Web.pdf
+https://web.archive.org/web/20230528191259/https://lab-sticc.univ-brest.fr/~leparc/Etud/Licence/IntroInfo/WebPascal/TP9_Web.pdf
 
 
 
