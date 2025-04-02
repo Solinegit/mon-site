@@ -41,16 +41,6 @@ Dans cet exemple, l'interface `User` ne définit que la propriété `name`. Cepe
 
 Cependant, si vous essayez d'accéder à `user.age` ou `user.city`, TypeScript vous donnera une erreur de compilation car ces propriétés ne sont pas définies dans l'interface `User`. Si vous voulez accéder à ces propriétés, vous devrez les ajouter à l'interface `User`.
 
-On peut aussi sélectionner les propriétés à désérialiser en utilisant un deuxième argument de type fonction fléchée (anonyme) pour `JSON.parse()` comme suit :
-
-```typescript
-let jsonString = '{"name":"John","age":30,"city":"New York"}';
-let user: User = JSON.parse(jsonString, (key, value) => {
-  if (key === 'name' || key === 'age') {
-    return value;
-  }
-});
-```
 
 vous devez lire et comprendre le code source de `app.ts` que voici
 

@@ -10,10 +10,10 @@ vous devez installer
 - git [Git](https://git-scm.com/downloads)
 - le runtime JavaScript [Bun](https://bun.sh/)
 - le runtime NodeJs [NodeJs](https://nodejs.org/en/download/)
-- le backend Astro [Astro](https://astro.build/) que vous n'avez pas besoin d'installer, mais que vous initialiserez avec `bun create astro@latest` dans chaque répertoire (TP/projet). Pour le moment vous n'avez pas besoin de créer un projet Astro pour ce premier TP mais à partir du second TP. 
+- le backend Astro [Astro](https://astro.build/) que vous n'avez pas besoin d'installer, mais que vous initialiserez avec `bun create astro@latest` dans chaque répertoire (TP/projet). Pour le moment vous n'avez pas besoin de créer un projet Astro pour ce premier TP mais à partir du second TP. Attention pour certains avec une architecture processeur ARM il faudra utiliser la commande `npm create astro@latest`.
 - l'extension Astro de VSCode [Astro Extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode) : directement dans VSCode, cliquez sur l'icône des extensions dans la barre latérale gauche, recherchez "Astro" et cliquez sur "Installer"
 - les extensions Github copilot et Gihub copilot chat dans VSCode. Vous pouvez les installer en cliquant sur l'icône des extensions dans la barre latérale gauche de VSCode, en recherchant "copilot" et en cliquant sur "Installer".
-- le gestionnaire de base de données PocketBase [PocketBase](https://pocketbase.io/) 
+- le gestionnaire de base de données PocketBase [PocketBase](https://pocketbase.io/) - il suffit de télécharger un exécutable, pas besoin de l'installer.
 - le langage [typescript](https://www.typescriptlang.org/download) globalement sur votre ordinateur en utilisant (en mode superutilisateur) `bun install -g typescript` qui fournira la commande `tsc` (typescript compiler)
 
   > sur les machines de l'école, VSCode est installé, mais pas typescript et vous n'avez pas le droit d'installer globalement typescript. Vous pouvez cependant l'installer localement avec `npm install typescript --save-dev` (attention, il s'agit bien de npm au lieu de bun) et utiliser la commande `npx tsc` (au lieu de `tsc`)
@@ -49,7 +49,7 @@ transpilez dans un terminal avec
 tsc hello.ts
 ```
 
-le fichier `hello.js` est créé, vous pouvez l'exécuter sans navigateur avec node
+le fichier `hello.js` est créé, vous pouvez l'exécuter sans navigateur avec bun
 
 ```terminal
 bun hello.js
@@ -67,7 +67,7 @@ bun hello.ts
 
 lisez https://www.typescriptlang.org/fr/docs/handbook/typescript-from-scratch.html pour comprendre pourquoi le typage permet de gagner du temps
 
-lisez sur le site pédagogique les parties théoriques
+lisez sur le site pédagogique (ecampus) les parties théoriques sont disponibles sur des PDF à votre dispositions, lisez ceux-ci:
 
 07 Environnement de developpement.pdf
 
