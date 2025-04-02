@@ -44,18 +44,22 @@ en particulier https://developer.mozilla.org/fr/docs/Learn/Forms/Your_first_form
 
 # Exercice 
 
-Créez une application qui utilise l'API REST publique OpenAQ (https://docs.openaq.org/). Cette API fournit des données sur la qualité de l'air dans le monde entier.
+Créez une application côté serveur (car l'API bloque en CORS) qui utilise l'API REST publique OpenAQ (https://docs.openaq.org/). Cette API fournit des données sur la qualité de l'air dans le monde entier. Vous devez d'abord vous inscrire sur le site (et valider votre email) pour avoir un clé d'accès API qui sera disponible sur mon compte une fois connecté.
 
 Votre application doit faire ce qui suit :
 
-- Afficher un formulaire demandant à l'utilisateur d'entrer le nom d'une ville.
-Lorsque l'utilisateur soumet le formulaire, votre application doit faire une requête GET à l'API pour récupérer une liste des dernières mesures de la qualité de l'air pour la ville entrée par l'utilisateur.
+- Afficher un formulaire demandant à l'utilisateur d'entrer le nom d'un Pays.
+Lorsque l'utilisateur soumet le formulaire, votre application doit faire une requête GET à l'API pour récupérer une liste des locations du pays. 
+- Afficher la liste des locations dans une liste déroulante (select).
+- Lorsque l'utilisateur sélectionne un emplacement, votre application doit faire une autre requête GET à l'API pour récupérer les mesures de qualité de l'air pour cet emplacement.
+- Afficher les mesures de qualité de l'air dans un tableau.
+- Chaque mesure doit afficher le nom du polluant, la valeur mesurée et l'unité de mesure.
 - Chaque mesure doit être affichée dans un format facile à lire. Au minimum, chaque mesure doit afficher le nom du polluant, la valeur mesurée et l'unité de mesure.
 - L'application doit actualiser les données à intervalles réguliers.
-- Si la ville entrée par l'utilisateur n'est pas disponible dans l'API, l'application doit en informer l'utilisateur.
+- Si le pays entré par l'utilisateur n'est pas disponible dans l'API, l'application doit en informer l'utilisateur.
  
 Conseils :
 
 - Pensez à la gestion des erreurs. Que se passe-t-il si une requête à l'API échoue ?
 - Comment allez-vous gérer l'actualisation des données à intervalles réguliers ? Pensez à utiliser setInterval.
-- N'oubliez pas de prévenir l'utilisateur si la ville qu'il a entrée n'est pas disponible dans l'API.
+- N'oubliez pas de prévenir l'utilisateur si le pays qu'il a entrée n'est pas disponible dans l'API.
