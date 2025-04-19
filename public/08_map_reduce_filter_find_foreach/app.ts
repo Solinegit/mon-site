@@ -105,3 +105,52 @@ tab.forEach((x) => {
   x = fois2(x);
   console.log("for each (fois2): " + x);
 });
+
+
+
+//Exercice 1
+
+const fruits: string[] = [
+  "pomme",
+  "kiwi",
+  "banane",
+  "cerise",
+  "orange",
+  "poire",
+  "fraise",
+  "prune",
+  "ananas",
+  "pêche"
+];
+
+console.log(fruits);
+
+
+// Exercice 2
+
+const fruitsMajuscules: string[] = fruits.map((fruit) => fruit.toUpperCase());
+
+console.log("Fruits en majuscules :", fruitsMajuscules);
+
+
+
+// Exercice 3
+
+const fruitsCommencentParP: string[] = fruits.filter(fruit => fruit.startsWith("p"));
+
+console.log("Fruits qui commencent par 'p' :", fruitsCommencentParP);
+
+
+
+// Exercice 4
+
+const fruitsEnChaine: string = fruits.reduce((acc, fruit) => acc + ", " + fruit);
+
+console.log("Fruits concaténés :", fruitsEnChaine);
+
+
+// Exercice 5
+
+const fruitLong: string | undefined = fruits.find(fruit => fruit.length > 5);
+
+console.log("Premier fruit avec plus de 5 lettres :", fruitLong);

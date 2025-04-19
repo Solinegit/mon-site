@@ -165,3 +165,95 @@ console.log("n2", n2.getNumeroStatique(), n2.getNumero());
 console.log("n3", n3.getNumeroStatique(), n3.getNumero());
 console.log("numeroStatique", Numero.numeroStatique);
 
+
+
+//exercice 1
+
+interface IVehicle {
+  drive(): void;
+  honk(): void;
+}
+
+
+//exercice 2
+
+
+abstract class Vehicle implements IVehicle {
+  protected speed: number;
+
+  constructor(speed: number) {
+    this.speed = speed;
+  }
+
+  drive(): void {
+    console.log(`Driving at ${this.speed} km/h`);
+  }
+
+  abstract honk(): void;
+}
+
+
+//exercice 3
+
+class Car extends Vehicle {
+  constructor(speed: number) {
+    super(speed);
+  }
+
+  honk(): void {
+    console.log("Beep beep!");
+  }
+}
+
+const myCar = new Car(120);
+myCar.drive(); // Affiche: Driving at 120 km/h
+myCar.honk();  // Affiche: Beep beep!
+
+
+
+
+//exercice 4
+
+class Bicycle extends Vehicle {
+  constructor(speed: number) {
+    super(speed);
+  }
+
+  honk(): void {
+    console.log("Ring Ring");
+  }
+}
+
+const myBike = new Bicycle(25);
+myBike.drive(); // Affiche: Driving at 25 km/h
+myBike.honk();  // Affiche: Ring Ring
+
+
+
+
+
+//exercice 5
+
+const car1 = new Car(120);
+const car2 = new Car(140);
+
+const bike1 = new Bicycle(20);
+const bike2 = new Bicycle(25);
+const bike3 = new Bicycle(18);
+
+const vehicles: IVehicle[] = [car1, car2, bike1, bike2, bike3];
+
+
+vehicles.forEach((vehicle) => {
+  vehicle.drive();
+  vehicle.honk();
+});
+
+
+//exercice 6
+
+for (const vehicle of vehicles) {
+  vehicle.drive();
+  vehicle.honk();
+}
+

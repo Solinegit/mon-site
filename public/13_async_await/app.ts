@@ -117,3 +117,122 @@ class FileService {
 const fileService = new FileService();
 fileService.retrieveFileContent("monFichier.txt");
 //ici le fichier n'existe pas, mais comme vous pouvez le voir au dessus, la lecture réussit 50% du temps sans "vraiment" lire un fichier, il s'agit d'une simulation
+
+
+
+
+
+//exercice 1
+
+
+
+// Une fonction qui retourne une promesse qui se résout après un délai de 3 secondes
+function calculateSumAsync(a: number, b: number): Promise<number> {
+  return new Promise<number>((resolve) => {
+    setTimeout(() => {
+      const sum = a + b; // Calcul de la somme
+      resolve(sum); // Résolution de la promesse avec la somme
+    }, 3000); // Délai de 3 secondes
+  });
+}
+
+// Fonction asynchrone pour afficher la somme
+async function printSum(a: number, b: number): Promise<void> {
+  console.log("Calcul en cours..."); // Afficher avant de commencer le calcul
+  const sum = await calculateSumAsync(a, b); // Attendre la résolution de la promesse
+  console.log(`La somme est : ${sum}`); // Afficher le résultat une fois que la promesse est résolue
+}
+
+// Appel de printSum
+printSum(5, 7); // Affichera d'abord "Calcul en cours...", puis "La somme est : 12" après 3 secondes
+
+
+
+//exercice 2
+
+// Fonction qui vérifie le nom d'utilisateur et le mot de passe
+function verifyUser(username: string, password: string): Promise<string> {
+  return new Promise<string>((resolve, reject) => {
+    const correctUsername = "admin"; // Nom d'utilisateur correct
+    const correctPassword = "password123"; // Mot de passe correct
+
+    // Vérification des informations
+    if (username === correctUsername && password === correctPassword) {
+      resolve("Utilisateur vérifié avec succès"); // Résolution si les informations sont correctes
+    } else {
+      reject("Nom d'utilisateur ou mot de passe incorrect"); // Rejet si l'une des informations est incorrecte
+    }
+  });
+}
+
+// Exemple d'utilisation de la fonction
+verifyUser("admin", "password123")
+  .then((message) => console.log(message)) // Si les informations sont correctes
+  .catch((error) => console.error(error)); // Si une erreur se produit
+
+
+  
+
+
+  //exercice 3
+
+  //exo1
+
+  class Calculator {
+    // Méthode qui retourne une promesse qui se résout après un délai de 3 secondes
+    addNumbersAsync(a: number, b: number): Promise<number> {
+      return new Promise<number>((resolve) => {
+        setTimeout(() => {
+          const sum = a + b; // Calcul de la somme
+          resolve(sum); // Résolution de la promesse avec la somme
+        }, 3000); // Délai de 3 secondes
+      });
+    }
+  }
+  
+  // Utilisation de la classe Calculator pour calculer la somme
+  const calculator = new Calculator();
+  
+  async function displaySum(a: number, b: number): Promise<void> {
+    console.log("Calcul en cours..."); // Afficher avant de commencer le calcul
+    const sum = await calculator.addNumbersAsync(a, b); // Attendre la résolution de la promesse
+    console.log(`La somme est : ${sum}`); // Afficher le résultat une fois que la promesse est résolue
+  }
+  
+  // Appel de displaySum
+  displaySum(5, 7); // Affichera d'abord "Calcul en cours...", puis "La somme est : 12" après 3 secondes
+
+  
+
+  //exo2
+
+  class User {
+    // Méthode qui vérifie le nom d'utilisateur et le mot de passe
+    checkCredentials(username: string, password: string): Promise<string> {
+      return new Promise<string>((resolve, reject) => {
+        const correctUsername = "admin"; // Nom d'utilisateur correct
+        const correctPassword = "password123"; // Mot de passe correct
+  
+        // Vérification des informations
+        if (username === correctUsername && password === correctPassword) {
+          resolve("Utilisateur vérifié avec succès"); // Résolution si les informations sont correctes
+        } else {
+          reject("Nom d'utilisateur ou mot de passe incorrect"); // Rejet si l'une des informations est incorrecte
+        }
+      });
+    }
+  }
+  
+  // Utilisation de la classe User pour vérifier l'utilisateur
+  const user = new User();
+  
+  user.checkCredentials("admin", "password123")
+    .then((message) => {
+      console.log("Bienvenue, " + message); // Si les informations sont correctes
+    })
+    .catch((error) => {
+      console.error("Erreur : " + error); // Si une erreur se produit (informations incorrectes)
+    });
+
+    
+    
