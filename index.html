@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mon projet</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
+
 <body>
-    <header>
-        <h1>Bienvenue sur mon projet Open Source</h1>
-    </header>
-
-    <main>
-        <p>Ce projet est un site web open source que vous pouvez utiliser et modifier. Il est basé sur le dépôt <a href="https://github.com/solinegit/mon-site">ici sur GitHub</a>.</p>
-        <h2>Comment l'utiliser :</h2>
-        <ul>
-            <li>Clonez le dépôt : <code>git clone https://github.com/solinegit/mon-site.git</code></li>
-            <li>Installez les dépendances (si nécessaire)</li>
-            <li>Lancez le projet localement !</li>
-        </ul>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Mon Nom | <a href="https://github.com/solinegit/mon-site">GitHub</a></p>
-    </footer>
-
-    <script src="script.js"></script>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'WebDev101 par Rémi SHARROCK',
+      requestHeaders: {
+        'cache-control': 'max-age=0',
+      },
+      loadSidebar: true
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-typescript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+  <script src="https://unpkg.com/docsify-copy-code@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-terminal-block@1.0.3"></script>
 </body>
+
 </html>
